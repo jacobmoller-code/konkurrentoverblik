@@ -3,7 +3,7 @@
 
 const fs = require('fs');
 
-const API_KEY = 'AIzaSyDy-JD95Z4Vg0smTZk6SyVOQMrKk-WMpu0';
+const API_KEY = 'AIzaSyBZo42YoLf_an0fwRpqGFNatwMrLD4AS5E';
 
 // Denmark bounding box - we'll search in a grid pattern
 const DENMARK_BOUNDS = {
