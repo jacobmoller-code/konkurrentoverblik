@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Konkurrentoverblik - Danmark</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>McDonald's Konkurrentoverblik</h1>
+            <p class="subtitle">Fast food restauranter i Danmark</p>
+        </header>
+
+        <div class="controls">
+            <div class="filter-group">
+                <label>Vis restauranter:</label>
+                <div class="checkboxes">
+                    <label class="checkbox-label mcdonalds">
+                        <input type="checkbox" id="filter-mcdonalds" checked>
+                        <span class="brand-icon" style="background-color: #FFC72C;"></span>
+                        McDonald's (<span id="count-mcdonalds">0</span>)
+                    </label>
+                    <label class="checkbox-label burgerking">
+                        <input type="checkbox" id="filter-burgerking" checked>
+                        <span class="brand-icon" style="background-color: #D62300;"></span>
+                        Burger King (<span id="count-burgerking">0</span>)
+                    </label>
+                    <label class="checkbox-label sunset">
+                        <input type="checkbox" id="filter-sunset" checked>
+                        <span class="brand-icon" style="background-color: #E85D04;"></span>
+                        Sunset Boulevard (<span id="count-sunset">0</span>)
+                    </label>
+                    <label class="checkbox-label max">
+                        <input type="checkbox" id="filter-max" checked>
+                        <span class="brand-icon" style="background-color: #C1121F;"></span>
+                        Max (<span id="count-max">0</span>)
+                    </label>
+                    <label class="checkbox-label jagger">
+                        <input type="checkbox" id="filter-jagger" checked>
+                        <span class="brand-icon" style="background-color: #1B4332;"></span>
+                        Jagger (<span id="count-jagger">0</span>)
+                    </label>
+                </div>
+            </div>
+            <div class="view-toggle">
+                <button id="btn-map" class="active">Kort</button>
+                <button id="btn-list">Liste</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div id="map-view" class="view active">
+                <div id="map"></div>
+            </div>
+            <div id="list-view" class="view">
+                <div class="list-controls">
+                    <input type="text" id="search-input" placeholder="Søg efter restaurant eller adresse...">
+                    <select id="sort-select">
+                        <option value="name">Sorter efter navn</option>
+                        <option value="brand">Sorter efter kæde</option>
+                        <option value="city">Sorter efter by</option>
+                    </select>
+                </div>
+                <div id="restaurant-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
