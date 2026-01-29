@@ -2041,13 +2041,6 @@ const restaurants = {
       "lng": 12.5608556,
       "rating": 3.7,
       "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 5:00 AM | Saturday: 10:00 AM – 5:00 AM | Sunday: 10:00 AM – 12:00 AM"
-    },
-    {
-      "name": "Freetrailer trailerudlejning - MAX Burgers Herlev",
-      "address": "Herlev Hovedgade 55, 2730 Herlev, Denmark",
-      "lat": 55.7187193,
-      "lng": 12.4503537,
-      "hours": "Monday: 7:00 AM – 11:00 PM | Tuesday: 7:00 AM – 11:00 PM | Wednesday: 7:00 AM – 11:00 PM | Thursday: 7:00 AM – 11:00 PM | Friday: 7:00 AM – 11:00 PM | Saturday: 7:00 AM – 11:00 PM | Sunday: 7:00 AM – 11:00 PM"
     }
   ],
   "jagger": [
