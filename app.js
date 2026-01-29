@@ -89,6 +89,7 @@ function addMarkersToMap() {
                     icon: createMarkerIcon(brand)
                 });
 
+                const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${restaurant.lat},${restaurant.lng}`;
                 const popupContent = `
                     <div class="popup-content">
                         <span class="brand-tag brand-${brand}">${config.name}</span>
@@ -96,7 +97,7 @@ function addMarkersToMap() {
                         <p>${restaurant.address || ''}</p>
                         <p>${restaurant.zipCity || ''}</p>
                         ${restaurant.rating ? `<p class="rating">★ ${restaurant.rating}</p>` : ''}
-                        ${restaurant.hours ? `<p>Åbningstider: ${restaurant.hours}</p>` : ''}
+                        <a href="${googleMapsUrl}" target="_blank" class="google-maps-btn">Åbn i Google Maps</a>
                     </div>
                 `;
 
@@ -176,8 +177,9 @@ function renderList() {
     // Render
     container.innerHTML = allRestaurants.map(r => {
         const config = brandConfig[r.brand];
+        const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${r.lat},${r.lng}`;
         return `
-            <div class="restaurant-item" data-lat="${r.lat}" data-lng="${r.lng}">
+            <div class="restaurant-item" data-lat="${r.lat}" data-lng="${r.lng}" data-maps-url="${googleMapsUrl}">
                 <div class="restaurant-brand" style="background-color: ${config.color}; color: ${config.textColor}">
                     ${config.name.charAt(0)}
                 </div>
@@ -187,21 +189,18 @@ function renderList() {
                     <div class="restaurant-details">
                         <span class="brand-name">${config.name}</span>
                         ${r.rating ? `<span class="rating">★ ${r.rating}</span>` : ''}
-                        ${r.hours ? `<span>${r.hours}</span>` : ''}
                     </div>
                 </div>
             </div>
         `;
     }).join('');
 
-    // Add click handlers to jump to map
+    // Add click handlers to open Google Maps
     container.querySelectorAll('.restaurant-item').forEach(item => {
         item.addEventListener('click', () => {
-            const lat = parseFloat(item.dataset.lat);
-            const lng = parseFloat(item.dataset.lng);
-            if (lat && lng) {
-                document.getElementById('btn-map').click();
-                map.setView([lat, lng], 15);
+            const mapsUrl = item.dataset.mapsUrl;
+            if (mapsUrl) {
+                window.open(mapsUrl, '_blank');
             }
         });
         item.style.cursor = 'pointer';

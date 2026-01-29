@@ -246,6 +246,23 @@ header .subtitle {
     margin-bottom: 8px;
 }
 
+.google-maps-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #4285f4;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+.google-maps-btn:hover {
+    background-color: #3367d6;
+    color: white;
+}
+
 /* Brand Colors */
 .brand-mcdonalds { background-color: #FFC72C; color: #000; }
 .brand-burgerking { background-color: #D62300; }

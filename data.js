@@ -1580,7 +1580,7 @@ const restaurants = {
       "address": "Arne Jacobsens Allé 12, 2300 København S, Denmark",
       "lat": 55.6312,
       "lng": 12.5773,
-      "rating": null,
+      "rating": 4.2,
       "hours": null
     }
   ],
