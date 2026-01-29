@@ -1,7 +1,7 @@
 // ============================================
 // GOOGLE PLACES API KEY - Add your key here
 // ============================================
-const GOOGLE_API_KEY = 'YOUR_API_KEY_HERE';
+const GOOGLE_API_KEY = 'AIzaSyDy-JD95Z4Vg0smTZk6SyVOQMrKk-WMpu0';
 
 // Initialize map centered on Denmark
 const map = L.map('map').setView([56.0, 10.5], 7);
