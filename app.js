@@ -1,3 +1,8 @@
+// ============================================
+// GOOGLE PLACES API KEY - Add your key here
+// ============================================
+const GOOGLE_API_KEY = 'YOUR_API_KEY_HERE';
+
 // Initialize map centered on Denmark
 const map = L.map('map').setView([56.0, 10.5], 7);
 
@@ -148,8 +153,6 @@ function setupViewToggle() {
 // Render list view
 function renderList() {
     const container = document.getElementById('restaurant-list');
-    const searchTerm = document.getElementById('search-input').value.toLowerCase();
-    const sortBy = document.getElementById('sort-select').value;
 
     // Collect all visible restaurants
     let allRestaurants = [];
@@ -163,25 +166,11 @@ function renderList() {
         }
     });
 
-    // Filter by search
-    if (searchTerm) {
-        allRestaurants = allRestaurants.filter(r =>
-            (r.name && r.name.toLowerCase().includes(searchTerm)) ||
-            (r.address && r.address.toLowerCase().includes(searchTerm)) ||
-            (r.zipCity && r.zipCity.toLowerCase().includes(searchTerm))
-        );
-    }
-
-    // Sort
+    // Sort by brand, then by name
     allRestaurants.sort((a, b) => {
-        switch (sortBy) {
-            case 'brand':
-                return brandConfig[a.brand].name.localeCompare(brandConfig[b.brand].name);
-            case 'city':
-                return (a.zipCity || '').localeCompare(b.zipCity || '');
-            default:
-                return (a.name || '').localeCompare(b.name || '');
-        }
+        const brandCompare = brandConfig[a.brand].name.localeCompare(brandConfig[b.brand].name);
+        if (brandCompare !== 0) return brandCompare;
+        return (a.name || '').localeCompare(b.name || '');
     });
 
     // Render
@@ -219,10 +208,62 @@ function renderList() {
     });
 }
 
-// Setup search and sort
-function setupListControls() {
-    document.getElementById('search-input').addEventListener('input', renderList);
-    document.getElementById('sort-select').addEventListener('change', renderList);
+// ============================================
+// GOOGLE PLACES API FUNCTIONS
+// ============================================
+
+// Fetch place details from Google Places API
+async function fetchPlaceDetails(lat, lng, name) {
+    if (GOOGLE_API_KEY === 'YOUR_API_KEY_HERE') {
+        console.warn('Google API key not configured');
+        return null;
+    }
+
+    try {
+        // First, find the place using Nearby Search
+        const searchUrl = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=100&keyword=${encodeURIComponent(name)}&key=${GOOGLE_API_KEY}`;
+
+        // Note: This needs to be done server-side or via a proxy due to CORS
+        // For client-side, you'd use the Google Maps JavaScript API instead
+        const response = await fetch(searchUrl);
+        const data = await response.json();
+
+        if (data.results && data.results.length > 0) {
+            const place = data.results[0];
+            return {
+                rating: place.rating,
+                placeId: place.place_id
+            };
+        }
+    } catch (error) {
+        console.error('Error fetching place details:', error);
+    }
+    return null;
+}
+
+// Enrich all restaurants with Google data (run once to update data.js)
+async function enrichWithGoogleData() {
+    if (GOOGLE_API_KEY === 'YOUR_API_KEY_HERE') {
+        alert('Please add your Google API key to app.js first!');
+        return;
+    }
+
+    console.log('Starting to fetch Google Places data...');
+
+    for (const brand of Object.keys(restaurants)) {
+        for (const restaurant of restaurants[brand]) {
+            const details = await fetchPlaceDetails(restaurant.lat, restaurant.lng, restaurant.name);
+            if (details) {
+                restaurant.rating = details.rating;
+                console.log(`Updated ${restaurant.name}: rating ${details.rating}`);
+            }
+            // Rate limiting - wait 200ms between requests
+            await new Promise(resolve => setTimeout(resolve, 200));
+        }
+    }
+
+    console.log('Done! Copy this data to update data.js:');
+    console.log(JSON.stringify(restaurants, null, 2));
 }
 
 // Initialize
@@ -230,5 +271,5 @@ document.addEventListener('DOMContentLoaded', () => {
     addMarkersToMap();
     setupFilters();
     setupViewToggle();
-    setupListControls();
+    renderList();
 });
