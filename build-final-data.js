@@ -2,7 +2,7 @@
 const fs = require('fs');
 const XLSX = require('xlsx');
 
-const API_KEY = 'AIzaSyBZo42YoLf_an0fwRpqGFNatwMrLD4AS5E';
+const API_KEY = 'AIzaSyC8t2D1cJ3rHPc9kPSxBeY-sVLEuTCbixU';
 
 // Read McDonald's Excel files
 console.log('Reading McDonald\'s Excel files...');
