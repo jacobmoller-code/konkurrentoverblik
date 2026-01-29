@@ -1874,14 +1874,6 @@ const restaurants = {
     },
     {
       "name": "Sunset Boulevard",
-      "address": "Klampenborgvej 215 c, 2800 Kongens Lyngby, Denmark",
-      "lat": 55.77131379999999,
-      "lng": 12.5070861,
-      "rating": 3.3,
-      "hours": null
-    },
-    {
-      "name": "Sunset Boulevard",
       "address": "Nyholmvej 10, 7500 Holstebro, Denmark",
       "lat": 56.3764779,
       "lng": 8.6197699,
