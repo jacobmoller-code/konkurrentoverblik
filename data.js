@@ -1362,7 +1362,7 @@ const restaurants = {
     },
     {
       "name": "Burger King",
-      "address": "Islevdalvej 40, 2610 Rødovre, Denmark",
+      "address": "Jyllingevej 336C, 2610 Rødovre, Denmark",
       "lat": 55.692262,
       "lng": 12.434087,
       "rating": 3.6,
@@ -1383,13 +1383,6 @@ const restaurants = {
       "lng": 9.1592269,
       "rating": 3.6,
       "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
-    },
-    {
-      "name": "Burger King Charging Station",
-      "address": "Sjællandsvej 4, 7330 VEJLE, Denmark",
-      "lat": 55.927558,
-      "lng": 9.158816999999999,
-      "hours": null
     },
     {
       "name": "Burger King",
@@ -1584,27 +1577,11 @@ const restaurants = {
     },
     {
       "name": "Burger King",
-      "address": "Gyldenløves gate 6, 4614 Kristiansand, Norway",
-      "lat": 58.14556200000001,
-      "lng": 7.992870000000001,
-      "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 3:00 AM | Friday: 10:00 AM – 3:00 AM | Saturday: 10:00 AM – 4:00 AM | Sunday: 11:00 AM – 11:00 PM"
-    },
-    {
-      "name": "Burger King",
-      "address": "Skarvøyveien 55, 4517 Mandal, Norway",
-      "lat": 58.029033,
-      "lng": 7.460871,
-      "rating": 4,
-      "hours": "Monday: 10:00 AM – 8:30 PM | Tuesday: 10:00 AM – 8:30 PM | Wednesday: 10:00 AM – 8:30 PM | Thursday: 10:00 AM – 8:30 PM | Friday: 10:00 AM – 8:30 PM | Saturday: 10:00 AM – 8:30 PM | Sunday: 12:00 – 8:00 PM"
-    },
-    {
-      "name": "Burger King",
-      "address": "Amfi Vågsbygd, Kirsten Flagstads vei 32, 4621 Kristiansand, Norway",
-      "lat": 58.1256052,
-      "lng": 7.953619799999999,
-      "rating": 4.4,
-      "hours": "Monday: 9:00 AM – 9:00 PM | Tuesday: 9:00 AM – 9:00 PM | Wednesday: 9:00 AM – 9:00 PM | Thursday: 9:00 AM – 9:00 PM | Friday: 9:00 AM – 9:00 PM | Saturday: 9:00 AM – 9:00 PM | Sunday: 12:00 – 9:00 PM"
+      "address": "Arne Jacobsens Allé 12, 2300 København S, Denmark",
+      "lat": 55.6312,
+      "lng": 12.5773,
+      "rating": null,
+      "hours": null
     }
   ],
   "sunset": [
