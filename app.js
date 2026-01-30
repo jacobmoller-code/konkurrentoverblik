@@ -181,54 +181,53 @@ function renderList() {
         return (a.name || '').localeCompare(b.name || '');
     });
 
-    // Render compact list with logos, opening hours, and status
+    // Render table rows
     container.innerHTML = allRestaurants.map(r => {
         const config = brandConfig[r.brand];
         // Search by name and address to find the actual restaurant listing
         const searchQuery = encodeURIComponent(`${r.name} ${r.address || ''}`);
         const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${searchQuery}`;
 
-        // Format hours - show abbreviated weekday hours
-        let hoursDisplay = '';
+        // Format hours - just show simple range like "10-22"
+        let hoursDisplay = '-';
         if (r.hours) {
-            const hoursArray = r.hours.split(' | ');
-            // Convert to short format: Man-Fre: 10-22, Lør-Søn: 10-23
-            const shortHours = hoursArray.map(h => {
-                const parts = h.split(': ');
-                if (parts.length === 2) {
-                    const day = parts[0].substring(0, 3); // Mon -> Mon
-                    const time = parts[1].replace(/ AM/g, '').replace(/ PM/g, '').replace(/12:00/g, '12').replace(/:00/g, '');
-                    return `${day}: ${time}`;
+            // Try to extract a simple time range from Monday
+            const match = r.hours.match(/Monday: (\d+):?\d* [AP]M – (\d+):?\d* [AP]M/i);
+            if (match) {
+                let open = parseInt(match[1]);
+                let close = parseInt(match[2]);
+                // Convert PM
+                if (r.hours.includes('AM') && r.hours.includes('PM')) {
+                    if (close < 12) close += 12;
                 }
-                return h;
-            });
-            hoursDisplay = shortHours.join(' · ');
+                hoursDisplay = `${open}-${close}`;
+            } else if (r.hours.includes('Open 24')) {
+                hoursDisplay = '24t';
+            }
         }
 
         // Status class for styling
         const statusClass = r.status === 'new' ? 'status-new' : (r.status === 'closed' ? 'status-closed' : '');
-        const statusBadge = r.status === 'new' ? '<span class="status-badge new">NY</span>' :
-                           (r.status === 'closed' ? '<span class="status-badge closed">LUKKET</span>' : '');
+
         return `
-            <div class="restaurant-item compact ${statusClass}" data-lat="${r.lat}" data-lng="${r.lng}" data-maps-url="${googleMapsUrl}">
-                <img class="brand-logo" src="${config.logo}" alt="${config.name}" onerror="this.style.display='none'">
-                <span class="restaurant-name">${statusBadge}${r.name || 'Unavngivet'}</span>
-                <span class="restaurant-address">${r.address || ''}</span>
-                ${r.rating ? `<span class="rating">★ ${r.rating}</span>` : '<span class="rating"></span>'}
-                <span class="restaurant-hours" title="${r.hours || ''}">${hoursDisplay}</span>
-            </div>
+            <tr class="restaurant-row ${statusClass}" data-url="${googleMapsUrl}">
+                <td><img class="brand-logo" src="${config.logo}" alt="${config.name}" onerror="this.style.display='none'"></td>
+                <td class="name-cell">${r.name || '-'}</td>
+                <td class="address-cell">${r.address || '-'}</td>
+                <td class="rating-cell">${r.rating ? '★' + r.rating : '-'}</td>
+                <td class="hours-cell" title="${r.hours || ''}">${hoursDisplay}</td>
+            </tr>
         `;
     }).join('');
 
     // Add click handlers to open Google Maps
-    container.querySelectorAll('.restaurant-item').forEach(item => {
-        item.addEventListener('click', () => {
-            const mapsUrl = item.dataset.mapsUrl;
-            if (mapsUrl) {
-                window.open(mapsUrl, '_blank');
+    container.querySelectorAll('.restaurant-row').forEach(row => {
+        row.addEventListener('click', () => {
+            const url = row.dataset.url;
+            if (url) {
+                window.open(url, '_blank');
             }
         });
-        item.style.cursor = 'pointer';
     });
 }
 
@@ -303,6 +302,17 @@ function updateAdminInfo() {
     }
 }
 
+// Setup admin toggle
+function setupAdminToggle() {
+    const toggle = document.getElementById('admin-toggle');
+    const panel = document.getElementById('admin-panel');
+    if (toggle && panel) {
+        toggle.addEventListener('click', () => {
+            panel.classList.toggle('show');
+        });
+    }
+}
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     addMarkersToMap();
@@ -310,4 +320,5 @@ document.addEventListener('DOMContentLoaded', () => {
     setupViewToggle();
     renderList();
     updateAdminInfo();
+    setupAdminToggle();
 });

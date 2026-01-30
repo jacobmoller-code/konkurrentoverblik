@@ -56,21 +56,25 @@
                 <div id="map"></div>
             </div>
             <div id="list-view" class="view">
-                <div class="list-header">
-                    <span></span>
-                    <span>Navn</span>
-                    <span>Adresse</span>
-                    <span>Rating</span>
-                    <span>Åbningstider</span>
-                </div>
-                <div id="restaurant-list"></div>
+                <table class="restaurant-table">
+                    <thead>
+                        <tr>
+                            <th style="width:30px"></th>
+                            <th style="width:180px">Navn</th>
+                            <th>Adresse</th>
+                            <th style="width:50px">Rating</th>
+                            <th style="width:80px">Åbningstid</th>
+                        </tr>
+                    </thead>
+                    <tbody id="restaurant-list"></tbody>
+                </table>
             </div>
         </div>
     </div>
 
     <!-- Hidden admin section - scroll to bottom to see -->
     <div class="admin-section" id="admin-section">
-        <div class="admin-toggle" onclick="document.getElementById('admin-panel').classList.toggle('show')">
+        <div class="admin-toggle" id="admin-toggle">
             ⚙️ Admin
         </div>
         <div class="admin-panel" id="admin-panel">
