@@ -153,11 +153,84 @@ header .subtitle {
 }
 
 #restaurant-list {
-    max-height: 600px;
+    max-height: 700px;
     overflow-y: auto;
 }
 
-.restaurant-item {
+/* Compact list header */
+.list-header {
+    display: grid;
+    grid-template-columns: 30px 180px 1fr 60px 150px;
+    gap: 10px;
+    padding: 8px 15px;
+    background: #f5f5f5;
+    font-weight: 600;
+    font-size: 12px;
+    color: #666;
+    border-bottom: 2px solid #ddd;
+    position: sticky;
+    top: 0;
+}
+
+/* Compact single-row restaurant item */
+.restaurant-item.compact {
+    display: grid;
+    grid-template-columns: 30px 180px 1fr 60px 150px;
+    gap: 10px;
+    padding: 6px 15px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+    transition: background-color 0.2s;
+    font-size: 13px;
+}
+
+.restaurant-item.compact:hover {
+    background-color: #f0f7ff;
+}
+
+.restaurant-item.compact:last-child {
+    border-bottom: none;
+}
+
+.brand-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.restaurant-item.compact .restaurant-name {
+    font-weight: 500;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.restaurant-item.compact .restaurant-address {
+    color: #555;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.restaurant-item.compact .rating {
+    color: #f59e0b;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.restaurant-item.compact .restaurant-hours {
+    color: #666;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Legacy styles for non-compact view */
+.restaurant-item:not(.compact) {
     padding: 15px 20px;
     border-bottom: 1px solid #eee;
     display: flex;
@@ -166,12 +239,8 @@ header .subtitle {
     transition: background-color 0.2s;
 }
 
-.restaurant-item:hover {
+.restaurant-item:not(.compact):hover {
     background-color: #f9f9f9;
-}
-
-.restaurant-item:last-child {
-    border-bottom: none;
 }
 
 .restaurant-brand {
@@ -194,13 +263,11 @@ header .subtitle {
 .restaurant-name {
     font-weight: 600;
     font-size: 16px;
-    margin-bottom: 4px;
 }
 
 .restaurant-address {
     color: #666;
     font-size: 14px;
-    margin-bottom: 4px;
 }
 
 .restaurant-details {
@@ -266,9 +333,9 @@ header .subtitle {
 /* Brand Colors */
 .brand-mcdonalds { background-color: #FFC72C; color: #000; }
 .brand-burgerking { background-color: #D62300; }
-.brand-sunset { background-color: #E85D04; }
-.brand-max { background-color: #C1121F; }
-.brand-jagger { background-color: #1B4332; }
+.brand-sunset { background-color: #F15A24; }
+.brand-max { background-color: #E30613; }
+.brand-jagger { background-color: #2D5A27; }
 
 /* Responsive */
 @media (max-width: 768px) {

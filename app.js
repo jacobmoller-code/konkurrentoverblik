@@ -11,32 +11,37 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Brand configuration
+// Brand configuration with official colors and logos
 const brandConfig = {
     mcdonalds: {
         name: "McDonald's",
         color: '#FFC72C',
-        textColor: '#000'
+        textColor: '#000',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/40px-McDonald%27s_Golden_Arches.svg.png'
     },
     burgerking: {
         name: 'Burger King',
         color: '#D62300',
-        textColor: '#fff'
+        textColor: '#fff',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Burger_King_logo_%281999%29.svg/40px-Burger_King_logo_%281999%29.svg.png'
     },
     sunset: {
         name: 'Sunset Boulevard',
-        color: '#E85D04',
-        textColor: '#fff'
+        color: '#F15A24',
+        textColor: '#fff',
+        logo: 'https://sunset-boulevard.dk/wp-content/uploads/2023/02/cropped-sunset-favicon-270x270.png'
     },
     max: {
         name: 'Max',
-        color: '#C1121F',
-        textColor: '#fff'
+        color: '#E30613',
+        textColor: '#fff',
+        logo: 'https://www.max.se/Static/images/max-logo.svg'
     },
     jagger: {
         name: 'Jagger',
-        color: '#1B4332',
-        textColor: '#fff'
+        color: '#2D5A27',
+        textColor: '#fff',
+        logo: 'https://jagger.dk/wp-content/uploads/2021/03/cropped-jagger-favicon-270x270.png'
     }
 };
 
@@ -174,23 +179,25 @@ function renderList() {
         return (a.name || '').localeCompare(b.name || '');
     });
 
-    // Render
+    // Render compact list with logos and opening hours
     container.innerHTML = allRestaurants.map(r => {
         const config = brandConfig[r.brand];
         const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${r.lat},${r.lng}`;
+        // Format hours - just show today or first day
+        let hoursDisplay = '';
+        if (r.hours) {
+            const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+            const hoursArray = r.hours.split(' | ');
+            const todayHours = hoursArray.find(h => h.startsWith(today));
+            hoursDisplay = todayHours ? todayHours.replace(today + ': ', '') : hoursArray[0]?.split(': ')[1] || '';
+        }
         return `
-            <div class="restaurant-item" data-lat="${r.lat}" data-lng="${r.lng}" data-maps-url="${googleMapsUrl}">
-                <div class="restaurant-brand" style="background-color: ${config.color}; color: ${config.textColor}">
-                    ${config.name.charAt(0)}
-                </div>
-                <div class="restaurant-info">
-                    <div class="restaurant-name">${r.name || 'Unavngivet'}</div>
-                    <div class="restaurant-address">${r.address || ''} ${r.zipCity || ''}</div>
-                    <div class="restaurant-details">
-                        <span class="brand-name">${config.name}</span>
-                        ${r.rating ? `<span class="rating">★ ${r.rating}</span>` : ''}
-                    </div>
-                </div>
+            <div class="restaurant-item compact" data-lat="${r.lat}" data-lng="${r.lng}" data-maps-url="${googleMapsUrl}">
+                <img class="brand-logo" src="${config.logo}" alt="${config.name}" onerror="this.style.display='none'">
+                <span class="restaurant-name">${r.name || 'Unavngivet'}</span>
+                <span class="restaurant-address">${r.address || ''}</span>
+                ${r.rating ? `<span class="rating">★ ${r.rating}</span>` : '<span class="rating"></span>'}
+                <span class="restaurant-hours">${hoursDisplay}</span>
             </div>
         `;
     }).join('');
