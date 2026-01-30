@@ -1,7 +1,16 @@
 // Restaurant data for Denmark
-// Generated: 2026-01-29
-// McDonald's data from internal Excel files (121 locations)
-// Competitor data from Google Places API
+// Baseline established: 2026-01-30
+// Last updated: 2026-01-30
+// Status: active = confirmed open, new = recently discovered, closed = no longer found
+//
+// McDonald's: 121 | Burger King: 61 | Sunset Boulevard: 47 | Max: 6 | Jagger: 18
+// Total: 253 restaurants
+
+const restaurantMetadata = {
+  "lastUpdated": "2026-01-30",
+  "baselineDate": "2026-01-30",
+  "totalRestaurants": 253
+};
 
 const restaurants = {
   "mcdonalds": [
@@ -12,7 +21,9 @@ const restaurants = {
       "lat": 55.649853,
       "lng": 12.507323,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 4:00 AM | Saturday: 8:00 AM – 4:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 4:00 AM | Saturday: 8:00 AM – 4:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's Rødovre Centrum",
@@ -21,7 +32,9 @@ const restaurants = {
       "lat": 55.68001,
       "lng": 12.456494,
       "rating": 2.6,
-      "hours": "Monday: 8:00 AM – 11:00 PM | Tuesday: 8:00 AM – 11:00 PM | Wednesday: 8:00 AM – 11:00 PM | Thursday: 8:00 AM – 11:00 PM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 11:00 PM"
+      "hours": "Monday: 8:00 AM – 11:00 PM | Tuesday: 8:00 AM – 11:00 PM | Wednesday: 8:00 AM – 11:00 PM | Thursday: 8:00 AM – 11:00 PM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's HOLSTEBRO",
@@ -30,7 +43,9 @@ const restaurants = {
       "lat": 56.363106,
       "lng": 8.612455,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 4:00 AM | Saturday: 8:00 AM – 4:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 4:00 AM | Saturday: 8:00 AM – 4:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's FREDERIKSHAVN",
@@ -39,7 +54,9 @@ const restaurants = {
       "lat": 57.446674,
       "lng": 10.508026,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's THISTED",
@@ -48,7 +65,9 @@ const restaurants = {
       "lat": 56.953228,
       "lng": 8.693093,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's STRUER",
@@ -57,7 +76,9 @@ const restaurants = {
       "lat": 56.487823,
       "lng": 8.582822,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's NYKØBING MORS",
@@ -66,7 +87,9 @@ const restaurants = {
       "lat": 56.787724,
       "lng": 8.818352,
       "rating": null,
-      "hours": null
+      "hours": null,
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's VIBORG",
@@ -75,7 +98,9 @@ const restaurants = {
       "lat": 56.448112,
       "lng": 9.365196,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's HERNING",
@@ -84,7 +109,9 @@ const restaurants = {
       "lat": 56.13498,
       "lng": 8.984771,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's RINGKØBING",
@@ -93,7 +120,9 @@ const restaurants = {
       "lat": 56.091457,
       "lng": 8.239895,
       "rating": 3.9,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's HERNING II",
@@ -102,7 +131,9 @@ const restaurants = {
       "lat": 56.13413,
       "lng": 9.00737,
       "rating": 3.9,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's VIBORG 2",
@@ -111,7 +142,9 @@ const restaurants = {
       "lat": 56.453537,
       "lng": 9.449592,
       "rating": 3.9,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's IKAST",
@@ -120,7 +153,9 @@ const restaurants = {
       "lat": 56.121136,
       "lng": 9.172402,
       "rating": 4,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's SKJERN",
@@ -129,7 +164,9 @@ const restaurants = {
       "lat": 55.95433,
       "lng": 8.51992,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's GENTOFTE",
@@ -138,7 +175,9 @@ const restaurants = {
       "lat": 55.75473,
       "lng": 12.517601,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's ROSKILDE",
@@ -147,7 +186,9 @@ const restaurants = {
       "lat": 55.64219,
       "lng": 12.11557,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's ROSKILDE II",
@@ -156,7 +197,9 @@ const restaurants = {
       "lat": 55.634228,
       "lng": 12.073604,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's HELSINGØR",
@@ -165,7 +208,9 @@ const restaurants = {
       "lat": 56.026768,
       "lng": 12.588752,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's SLAGELSE",
@@ -174,7 +219,9 @@ const restaurants = {
       "lat": 55.391792,
       "lng": 11.353344,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's BIRKERØD",
@@ -183,7 +230,9 @@ const restaurants = {
       "lat": 55.84096,
       "lng": 12.440987,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's KOKKEDAL",
@@ -192,7 +241,9 @@ const restaurants = {
       "lat": 55.903458,
       "lng": 12.476864,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's FREDERIKSSUND",
@@ -201,7 +252,9 @@ const restaurants = {
       "lat": 55.843445,
       "lng": 12.075203,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's HILLERØD PORT",
@@ -210,7 +263,9 @@ const restaurants = {
       "lat": 55.934887,
       "lng": 12.26266,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's VORDINGBORG",
@@ -219,7 +274,9 @@ const restaurants = {
       "lat": 54.99793,
       "lng": 12.00233,
       "rating": 4.1,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's KORSOR",
@@ -228,7 +285,9 @@ const restaurants = {
       "lat": 55.35283,
       "lng": 11.13974,
       "rating": 4.1,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's MARIBO",
@@ -237,7 +296,9 @@ const restaurants = {
       "lat": 54.779076,
       "lng": 11.473987,
       "rating": 4.1,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's FARUM",
@@ -246,7 +307,9 @@ const restaurants = {
       "lat": 55.814686,
       "lng": 12.381296,
       "rating": 4,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's RØNNEDE",
@@ -255,7 +318,9 @@ const restaurants = {
       "lat": 55.25689,
       "lng": 11.99645,
       "rating": 4,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's AALBORG",
@@ -264,7 +329,9 @@ const restaurants = {
       "lat": 57.049328,
       "lng": 9.921994,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 7:59 AM | Friday: 8:00 AM – 7:59 AM | Saturday: 8:00 AM – 7:59 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 7:59 AM | Friday: 8:00 AM – 7:59 AM | Saturday: 8:00 AM – 7:59 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's SKALBORG",
@@ -273,7 +340,9 @@ const restaurants = {
       "lat": 57.01021,
       "lng": 9.887939,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's NÆSTVED",
@@ -282,7 +351,9 @@ const restaurants = {
       "lat": 55.250656,
       "lng": 11.779522,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's HAVERSLEV",
@@ -291,7 +362,9 @@ const restaurants = {
       "lat": 56.78352,
       "lng": 9.695081,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's HJØRRING",
@@ -300,7 +373,9 @@ const restaurants = {
       "lat": 57.455956,
       "lng": 10.001965,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's NØRRESUNDBY",
@@ -309,7 +384,9 @@ const restaurants = {
       "lat": 57.07006,
       "lng": 9.946626,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's NYKØBING FALSTER",
@@ -318,7 +395,9 @@ const restaurants = {
       "lat": 54.768623,
       "lng": 11.875788,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's SKIVE",
@@ -327,7 +406,9 @@ const restaurants = {
       "lat": 56.56438,
       "lng": 9.030199,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's AABYBRO",
@@ -336,7 +417,9 @@ const restaurants = {
       "lat": 57.14891,
       "lng": 9.751241,
       "rating": 3.9,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's NÆSTVED 2",
@@ -345,7 +428,9 @@ const restaurants = {
       "lat": 55.223053,
       "lng": 11.7584,
       "rating": 3.4,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's BRØNDERSLEV",
@@ -354,7 +439,9 @@ const restaurants = {
       "lat": 57.26642,
       "lng": 9.939957,
       "rating": null,
-      "hours": null
+      "hours": null,
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's SVENSTRUP",
@@ -363,7 +450,9 @@ const restaurants = {
       "lat": 56.954052,
       "lng": 9.863897,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's BRABRAND",
@@ -372,7 +461,9 @@ const restaurants = {
       "lat": 56.158928,
       "lng": 10.068964,
       "rating": 3.9,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's VIBY",
@@ -381,7 +472,9 @@ const restaurants = {
       "lat": 56.129368,
       "lng": 10.160811,
       "rating": 3.3,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's RANDERSVEJ",
@@ -390,7 +483,9 @@ const restaurants = {
       "lat": 56.179302,
       "lng": 10.200146,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 3:00 AM | Thursday: 8:00 AM – 3:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 2:00 AM"
+      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 3:00 AM | Thursday: 8:00 AM – 3:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 2:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's GRENÅVEJ",
@@ -399,7 +494,9 @@ const restaurants = {
       "lat": 56.20193,
       "lng": 10.245838,
       "rating": 3.3,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's ÅRHUS BANEGÅRD",
@@ -408,7 +505,9 @@ const restaurants = {
       "lat": 56.14961,
       "lng": 10.20788,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's VIBY 2",
@@ -417,7 +516,9 @@ const restaurants = {
       "lat": 56.115032,
       "lng": 10.151467,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's TELEFONTORVET",
@@ -426,7 +527,9 @@ const restaurants = {
       "lat": 56.15602,
       "lng": 10.20639,
       "rating": 3.3,
-      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 5:00 AM | Thursday: 8:00 AM – 6:00 AM | Friday: 8:00 AM – 6:00 AM | Saturday: 8:00 AM – 6:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 5:00 AM | Thursday: 8:00 AM – 6:00 AM | Friday: 8:00 AM – 6:00 AM | Saturday: 8:00 AM – 6:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's NØRREVOLD",
@@ -435,7 +538,9 @@ const restaurants = {
       "lat": 55.68333,
       "lng": 12.572189,
       "rating": 3.4,
-      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 5:00 AM | Friday: 8:00 AM – 6:00 AM | Saturday: 8:00 AM – 6:00 AM | Sunday: 8:00 AM – 2:00 AM"
+      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 5:00 AM | Friday: 8:00 AM – 6:00 AM | Saturday: 8:00 AM – 6:00 AM | Sunday: 8:00 AM – 2:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's BALLERUP",
@@ -444,7 +549,9 @@ const restaurants = {
       "lat": 55.722973,
       "lng": 12.384553,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's FALKONER ALLE",
@@ -453,7 +560,9 @@ const restaurants = {
       "lat": 55.680096,
       "lng": 12.533812,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 3:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 3:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's AMAGER CENTRET",
@@ -462,7 +571,9 @@ const restaurants = {
       "lat": 55.66325,
       "lng": 12.604772,
       "rating": 2.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's VALBY TINGSTEDET",
@@ -471,7 +582,9 @@ const restaurants = {
       "lat": 55.66487,
       "lng": 12.51168,
       "rating": 3.5,
-      "hours": "Monday: 9:00 AM – 12:00 AM | Tuesday: 9:00 AM – 12:00 AM | Wednesday: 9:00 AM – 12:00 AM | Thursday: 9:00 AM – 12:00 AM | Friday: 9:00 AM – 12:00 AM | Saturday: 9:00 AM – 12:00 AM | Sunday: 9:00 AM – 12:00 AM"
+      "hours": "Monday: 9:00 AM – 12:00 AM | Tuesday: 9:00 AM – 12:00 AM | Wednesday: 9:00 AM – 12:00 AM | Thursday: 9:00 AM – 12:00 AM | Friday: 9:00 AM – 12:00 AM | Saturday: 9:00 AM – 12:00 AM | Sunday: 9:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's HORSENS",
@@ -480,7 +593,9 @@ const restaurants = {
       "lat": 55.846615,
       "lng": 9.824739,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's TILST",
@@ -489,7 +604,9 @@ const restaurants = {
       "lat": 56.18184,
       "lng": 10.12256,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's GRENÅ",
@@ -498,7 +615,9 @@ const restaurants = {
       "lat": 56.405987,
       "lng": 10.873493,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's RANDERS II",
@@ -507,7 +626,9 @@ const restaurants = {
       "lat": 56.457882,
       "lng": 10.033055,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's HORSENS 2",
@@ -516,7 +637,9 @@ const restaurants = {
       "lat": 55.870186,
       "lng": 9.865614,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's PURHUS",
@@ -525,7 +648,9 @@ const restaurants = {
       "lat": 56.540962,
       "lng": 9.896722,
       "rating": 3.9,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's LYSTRUP",
@@ -534,7 +659,9 @@ const restaurants = {
       "lat": 56.22511,
       "lng": 10.23707,
       "rating": 3.3,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's JYLLINGEVEJ",
@@ -543,7 +670,9 @@ const restaurants = {
       "lat": 55.69188,
       "lng": 12.463158,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's HOLBÆK",
@@ -552,7 +681,9 @@ const restaurants = {
       "lat": 55.717,
       "lng": 11.705871,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's HVIDOVRE",
@@ -561,7 +692,9 @@ const restaurants = {
       "lat": 55.645176,
       "lng": 12.460253,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's BRØNDBY",
@@ -570,7 +703,9 @@ const restaurants = {
       "lat": 55.669407,
       "lng": 12.437698,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's RINGSTED",
@@ -579,7 +714,9 @@ const restaurants = {
       "lat": 55.45151,
       "lng": 11.78576,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's Kalundborg",
@@ -588,7 +725,9 @@ const restaurants = {
       "lat": 56.737064,
       "lng": 9.623881,
       "rating": null,
-      "hours": null
+      "hours": null,
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's MIDDELFART",
@@ -597,7 +736,9 @@ const restaurants = {
       "lat": 55.509884,
       "lng": 9.767849,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's VEJLE 3",
@@ -606,7 +747,9 @@ const restaurants = {
       "lat": 55.67478,
       "lng": 9.579799,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's HERLEV",
@@ -615,7 +758,9 @@ const restaurants = {
       "lat": 55.716312,
       "lng": 12.437536,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's GLADSAXE",
@@ -624,7 +769,9 @@ const restaurants = {
       "lat": 55.741932,
       "lng": 12.493134,
       "rating": 3.2,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 2:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 2:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's ØSTERBROGADE 120",
@@ -633,7 +780,9 @@ const restaurants = {
       "lat": 55.70463,
       "lng": 12.577506,
       "rating": 3,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's KASTRUP",
@@ -642,7 +791,9 @@ const restaurants = {
       "lat": 55.63128,
       "lng": 12.656958,
       "rating": 3.1,
-      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 2:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 2:00 AM"
+      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 2:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 2:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's SOLRØD",
@@ -651,7 +802,9 @@ const restaurants = {
       "lat": 55.545918,
       "lng": 12.214892,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's KONGENS NYTORV",
@@ -660,7 +813,9 @@ const restaurants = {
       "lat": 55.67958,
       "lng": 12.584783,
       "rating": 3.2,
-      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 5:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 2:00 AM"
+      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 5:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 2:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's GLOSTRUP",
@@ -669,7 +824,9 @@ const restaurants = {
       "lat": 55.66443,
       "lng": 12.379324,
       "rating": 3.4,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's INDUSTRIENS HUS",
@@ -678,7 +835,9 @@ const restaurants = {
       "lat": 55.67547,
       "lng": 12.567398,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 5:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 2:00 AM"
+      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 5:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 2:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's FISKETORVET",
@@ -687,7 +846,9 @@ const restaurants = {
       "lat": 55.661503,
       "lng": 12.559762,
       "rating": 3.3,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's FIELDS",
@@ -696,7 +857,9 @@ const restaurants = {
       "lat": 55.63027,
       "lng": 12.577435,
       "rating": 2.5,
-      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 12:00 AM"
+      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's NØRREBRO BYCENTER",
@@ -705,7 +868,9 @@ const restaurants = {
       "lat": 55.702797,
       "lng": 12.538034,
       "rating": 2.8,
-      "hours": "Monday: 8:00 AM – 3:00 AM | Tuesday: 8:00 AM – 3:00 AM | Wednesday: 8:00 AM – 3:00 AM | Thursday: 8:00 AM – 3:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 3:00 AM"
+      "hours": "Monday: 8:00 AM – 3:00 AM | Tuesday: 8:00 AM – 3:00 AM | Wednesday: 8:00 AM – 3:00 AM | Thursday: 8:00 AM – 3:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 3:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's VANLØSE",
@@ -714,7 +879,9 @@ const restaurants = {
       "lat": 55.68769,
       "lng": 12.49085,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 12:00 AM | Tuesday: 8:00 AM – 12:00 AM | Wednesday: 8:00 AM – 12:00 AM | Thursday: 8:00 AM – 12:00 AM | Friday: 8:00 AM – 12:00 AM | Saturday: 8:00 AM – 12:00 AM | Sunday: 8:00 AM – 12:00 AM"
+      "hours": "Monday: 8:00 AM – 12:00 AM | Tuesday: 8:00 AM – 12:00 AM | Wednesday: 8:00 AM – 12:00 AM | Thursday: 8:00 AM – 12:00 AM | Friday: 8:00 AM – 12:00 AM | Saturday: 8:00 AM – 12:00 AM | Sunday: 8:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's HOLBÆK MEGACENTER",
@@ -723,7 +890,9 @@ const restaurants = {
       "lat": 55.701923,
       "lng": 11.668599,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's ROSENGÅRDCENTRET",
@@ -732,7 +901,9 @@ const restaurants = {
       "lat": 55.38208,
       "lng": 10.42962,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 3:00 AM | Tuesday: 8:00 AM – 3:00 AM | Wednesday: 8:00 AM – 3:00 AM | Thursday: 8:00 AM – 3:00 AM | Friday: 8:00 AM – 7:59 AM | Saturday: 8:00 AM – 7:59 AM | Sunday: 8:00 AM – 3:00 AM"
+      "hours": "Monday: 8:00 AM – 3:00 AM | Tuesday: 8:00 AM – 3:00 AM | Wednesday: 8:00 AM – 3:00 AM | Thursday: 8:00 AM – 3:00 AM | Friday: 8:00 AM – 7:59 AM | Saturday: 8:00 AM – 7:59 AM | Sunday: 8:00 AM – 3:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's VEJLE DTC",
@@ -741,7 +912,9 @@ const restaurants = {
       "lat": 55.748817,
       "lng": 9.590124,
       "rating": 3.6,
-      "hours": "Monday: 7:00 AM – 2:00 AM | Tuesday: 7:00 AM – 2:00 AM | Wednesday: 7:00 AM – 2:00 AM | Thursday: 7:00 AM – 2:00 AM | Friday: 7:00 AM – 6:59 AM | Saturday: 7:00 AM – 6:59 AM | Sunday: 7:00 AM – 2:00 AM"
+      "hours": "Monday: 7:00 AM – 2:00 AM | Tuesday: 7:00 AM – 2:00 AM | Wednesday: 7:00 AM – 2:00 AM | Thursday: 7:00 AM – 2:00 AM | Friday: 7:00 AM – 6:59 AM | Saturday: 7:00 AM – 6:59 AM | Sunday: 7:00 AM – 2:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's SILKEBORG",
@@ -750,7 +923,9 @@ const restaurants = {
       "lat": 56.184414,
       "lng": 9.545169,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's GJESING",
@@ -759,7 +934,9 @@ const restaurants = {
       "lat": 55.508377,
       "lng": 8.455578,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's VEJEN",
@@ -768,7 +945,9 @@ const restaurants = {
       "lat": 55.49321,
       "lng": 9.127744,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's STILLING",
@@ -777,7 +956,9 @@ const restaurants = {
       "lat": 56.06845,
       "lng": 9.977298,
       "rating": 3.7,
-      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 3:00 AM | Saturday: 7:00 AM – 3:00 AM | Sunday: 7:00 AM – 1:00 AM"
+      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 3:00 AM | Saturday: 7:00 AM – 3:00 AM | Sunday: 7:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's TARUPCENTRET",
@@ -786,7 +967,9 @@ const restaurants = {
       "lat": 55.410263,
       "lng": 10.339376,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's SVENDBORGVEJ",
@@ -795,7 +978,9 @@ const restaurants = {
       "lat": 55.352245,
       "lng": 10.405747,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's VARDE",
@@ -804,7 +989,9 @@ const restaurants = {
       "lat": 55.62472,
       "lng": 8.47982,
       "rating": 3.9,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's ESBJERG 3",
@@ -813,7 +1000,9 @@ const restaurants = {
       "lat": 55.47956,
       "lng": 8.495693,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's ODENSE C",
@@ -822,7 +1011,9 @@ const restaurants = {
       "lat": 55.39726,
       "lng": 10.38877,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 3:00 AM | Wednesday: 8:00 AM – 3:00 AM | Thursday: 8:00 AM – 7:59 AM | Friday: 8:00 AM – 7:59 AM | Saturday: 8:00 AM – 7:59 AM | Sunday: 8:00 AM – 2:00 AM"
+      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 3:00 AM | Wednesday: 8:00 AM – 3:00 AM | Thursday: 8:00 AM – 7:59 AM | Friday: 8:00 AM – 7:59 AM | Saturday: 8:00 AM – 7:59 AM | Sunday: 8:00 AM – 2:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's VEJLE SYD",
@@ -831,7 +1022,9 @@ const restaurants = {
       "lat": 55.665173,
       "lng": 9.546706,
       "rating": 4,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's ODENSE RISINGSVEJ",
@@ -840,7 +1033,9 @@ const restaurants = {
       "lat": 55.40277,
       "lng": 10.424,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's ESBJERG TORVET",
@@ -849,7 +1044,9 @@ const restaurants = {
       "lat": 55.466553,
       "lng": 8.451532,
       "rating": 3.2,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 7:59 AM | Saturday: 8:00 AM – 7:59 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 7:59 AM | Saturday: 8:00 AM – 7:59 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's RØNDE",
@@ -858,7 +1055,9 @@ const restaurants = {
       "lat": 56.29804,
       "lng": 10.48476,
       "rating": null,
-      "hours": null
+      "hours": null,
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's KOLDING",
@@ -867,7 +1066,9 @@ const restaurants = {
       "lat": 55.50403,
       "lng": 9.457587,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 2:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 2:00 AM"
+      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 2:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 2:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's SØNDERBORG",
@@ -876,7 +1077,9 @@ const restaurants = {
       "lat": 54.92403,
       "lng": 9.807416,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 2:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 2:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's RØDEKRO",
@@ -885,7 +1088,9 @@ const restaurants = {
       "lat": 55.067913,
       "lng": 9.361443,
       "rating": 3.7,
-      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 3:00 AM | Saturday: 7:00 AM – 3:00 AM | Sunday: 7:00 AM – 1:00 AM"
+      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 3:00 AM | Saturday: 7:00 AM – 3:00 AM | Sunday: 7:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's FREDERICIA",
@@ -894,7 +1099,9 @@ const restaurants = {
       "lat": 55.569336,
       "lng": 9.726389,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's NYBORG",
@@ -903,7 +1110,9 @@ const restaurants = {
       "lat": 55.309055,
       "lng": 10.805974,
       "rating": 3.7,
-      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 3:00 AM | Saturday: 7:00 AM – 3:00 AM | Sunday: 7:00 AM – 1:00 AM"
+      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 3:00 AM | Saturday: 7:00 AM – 3:00 AM | Sunday: 7:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's TØNDER",
@@ -912,7 +1121,9 @@ const restaurants = {
       "lat": 54.951035,
       "lng": 8.8879,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's HADERSLEV 2",
@@ -921,7 +1132,9 @@ const restaurants = {
       "lat": 55.25125,
       "lng": 9.490481,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's BRANDE",
@@ -930,7 +1143,9 @@ const restaurants = {
       "lat": 55.928085,
       "lng": 9.158749,
       "rating": 3.8,
-      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 1:00 AM | Saturday: 7:00 AM – 1:00 AM | Sunday: 7:00 AM – 1:00 AM"
+      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 1:00 AM | Saturday: 7:00 AM – 1:00 AM | Sunday: 7:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's AARUP",
@@ -939,7 +1154,9 @@ const restaurants = {
       "lat": 55.411205,
       "lng": 10.057103,
       "rating": 4,
-      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 2:00 AM | Saturday: 7:00 AM – 2:00 AM | Sunday: 7:00 AM – 1:00 AM"
+      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 2:00 AM | Saturday: 7:00 AM – 2:00 AM | Sunday: 7:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's KLIPLEV",
@@ -948,7 +1165,9 @@ const restaurants = {
       "lat": 54.94023,
       "lng": 9.378301,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's Kolding Syd",
@@ -957,7 +1176,9 @@ const restaurants = {
       "lat": 55.46516,
       "lng": 9.418683,
       "rating": 4.1,
-      "hours": "Monday: 8:00 AM – 12:00 AM | Tuesday: 8:00 AM – 12:00 AM | Wednesday: 8:00 AM – 12:00 AM | Thursday: 8:00 AM – 12:00 AM | Friday: 8:00 AM – 12:00 AM | Saturday: 8:00 AM – 12:00 AM | Sunday: 8:00 AM – 12:00 AM"
+      "hours": "Monday: 8:00 AM – 12:00 AM | Tuesday: 8:00 AM – 12:00 AM | Wednesday: 8:00 AM – 12:00 AM | Thursday: 8:00 AM – 12:00 AM | Friday: 8:00 AM – 12:00 AM | Saturday: 8:00 AM – 12:00 AM | Sunday: 8:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's Langeskov",
@@ -966,7 +1187,9 @@ const restaurants = {
       "lat": 55.352394,
       "lng": 10.564735,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's ERRITSØ",
@@ -975,7 +1198,9 @@ const restaurants = {
       "lat": 55.534454,
       "lng": 9.71698,
       "rating": 3.6,
-      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 2:00 AM | Saturday: 7:00 AM – 2:00 AM | Sunday: 7:00 AM – 1:00 AM"
+      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 2:00 AM | Saturday: 7:00 AM – 2:00 AM | Sunday: 7:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's TAASTRUP",
@@ -984,7 +1209,9 @@ const restaurants = {
       "lat": 55.659657,
       "lng": 12.288397,
       "rating": 3.6,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's KØGE",
@@ -993,7 +1220,9 @@ const restaurants = {
       "lat": 55.47977,
       "lng": 12.18601,
       "rating": 3.6,
-      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 2:00 AM | Saturday: 7:00 AM – 2:00 AM | Sunday: 7:00 AM – 1:00 AM"
+      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 2:00 AM | Saturday: 7:00 AM – 2:00 AM | Sunday: 7:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's VALLENSBÆK",
@@ -1002,7 +1231,9 @@ const restaurants = {
       "lat": 55.622707,
       "lng": 12.39075,
       "rating": 3.3,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's GREVE",
@@ -1011,7 +1242,9 @@ const restaurants = {
       "lat": 55.5997,
       "lng": 12.329161,
       "rating": 3.4,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's FRIHEDEN",
@@ -1020,7 +1253,9 @@ const restaurants = {
       "lat": 55.626953,
       "lng": 12.484161,
       "rating": 2.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's TAASTRUP CITY 2",
@@ -1029,7 +1264,9 @@ const restaurants = {
       "lat": 55.643925,
       "lng": 12.277655,
       "rating": 2.5,
-      "hours": "Monday: 8:00 AM – 12:00 AM | Tuesday: 8:00 AM – 12:00 AM | Wednesday: 8:00 AM – 12:00 AM | Thursday: 8:00 AM – 12:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 12:00 AM"
+      "hours": "Monday: 8:00 AM – 12:00 AM | Tuesday: 8:00 AM – 12:00 AM | Wednesday: 8:00 AM – 12:00 AM | Thursday: 8:00 AM – 12:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's KBH HOVEDBANEGÅRD",
@@ -1038,7 +1275,9 @@ const restaurants = {
       "lat": 55.673122,
       "lng": 12.564299,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 5:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 2:00 AM"
+      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 5:00 AM | Friday: 8:00 AM – 5:00 AM | Saturday: 8:00 AM – 5:00 AM | Sunday: 8:00 AM – 2:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's ODENSE BANEGÅRD",
@@ -1047,7 +1286,9 @@ const restaurants = {
       "lat": 55.40114,
       "lng": 10.387204,
       "rating": 3.4,
-      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 3:00 AM | Saturday: 7:00 AM – 3:00 AM | Sunday: 7:00 AM – 1:00 AM"
+      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 1:00 AM | Friday: 7:00 AM – 3:00 AM | Saturday: 7:00 AM – 3:00 AM | Sunday: 7:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's RINGE",
@@ -1056,7 +1297,9 @@ const restaurants = {
       "lat": 55.230103,
       "lng": 10.486351,
       "rating": null,
-      "hours": null
+      "hours": null,
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's RANDERS",
@@ -1065,7 +1308,9 @@ const restaurants = {
       "lat": 56.429176,
       "lng": 10.056615,
       "rating": 3.8,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's SVENDBORG",
@@ -1074,7 +1319,9 @@ const restaurants = {
       "lat": 55.060684,
       "lng": 10.599862,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's FREDERIKSVÆRK",
@@ -1083,7 +1330,9 @@ const restaurants = {
       "lat": 55.968864,
       "lng": 12.029652,
       "rating": 3.7,
-      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM"
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "McDonald's LYNGBY",
@@ -1092,7 +1341,9 @@ const restaurants = {
       "lat": 55.76862,
       "lng": 12.502934,
       "rating": 3.2,
-      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 2:00 AM | Friday: 7:00 AM – 2:00 AM | Saturday: 7:00 AM – 2:00 AM | Sunday: 7:00 AM – 1:00 AM"
+      "hours": "Monday: 7:00 AM – 1:00 AM | Tuesday: 7:00 AM – 1:00 AM | Wednesday: 7:00 AM – 1:00 AM | Thursday: 7:00 AM – 2:00 AM | Friday: 7:00 AM – 2:00 AM | Saturday: 7:00 AM – 2:00 AM | Sunday: 7:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     }
   ],
   "burgerking": [
@@ -1102,7 +1353,9 @@ const restaurants = {
       "lat": 54.95058599999999,
       "lng": 8.887076,
       "rating": 3.9,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1110,7 +1363,9 @@ const restaurants = {
       "lat": 54.926708,
       "lng": 9.781937,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1118,7 +1373,9 @@ const restaurants = {
       "lat": 54.89886199999999,
       "lng": 11.918597,
       "rating": 3.7,
-      "hours": "Monday: 9:00 AM – 12:00 AM | Tuesday: 9:00 AM – 12:00 AM | Wednesday: 9:00 AM – 12:00 AM | Thursday: 9:00 AM – 12:00 AM | Friday: 9:00 AM – 12:00 AM | Saturday: 9:00 AM – 12:00 AM | Sunday: 9:00 AM – 12:00 AM"
+      "hours": "Monday: 9:00 AM – 12:00 AM | Tuesday: 9:00 AM – 12:00 AM | Wednesday: 9:00 AM – 12:00 AM | Thursday: 9:00 AM – 12:00 AM | Friday: 9:00 AM – 12:00 AM | Saturday: 9:00 AM – 12:00 AM | Sunday: 9:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1126,7 +1383,9 @@ const restaurants = {
       "lat": 54.7596761,
       "lng": 11.8550795,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1134,7 +1393,9 @@ const restaurants = {
       "lat": 55.069157,
       "lng": 9.362179,
       "rating": 3.9,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1142,7 +1403,9 @@ const restaurants = {
       "lat": 55.2541277,
       "lng": 9.4824365,
       "rating": 3.9,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1150,7 +1413,9 @@ const restaurants = {
       "lat": 55.307295,
       "lng": 10.813194,
       "rating": 3.5,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1158,7 +1423,9 @@ const restaurants = {
       "lat": 55.23883499999999,
       "lng": 11.778131,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1166,7 +1433,9 @@ const restaurants = {
       "lat": 55.507896,
       "lng": 8.45326,
       "rating": 3.6,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1174,7 +1443,9 @@ const restaurants = {
       "lat": 55.352446,
       "lng": 8.781583999999999,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1182,7 +1453,9 @@ const restaurants = {
       "lat": 55.46632400000001,
       "lng": 8.457835,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM"
+      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1190,7 +1463,9 @@ const restaurants = {
       "lat": 55.50332,
       "lng": 9.459393,
       "rating": 3.6,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1198,7 +1473,9 @@ const restaurants = {
       "lat": 55.6637591,
       "lng": 9.5496885,
       "rating": 3.6,
-      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM"
+      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1206,7 +1483,9 @@ const restaurants = {
       "lat": 55.72243510000001,
       "lng": 9.5696057,
       "rating": 3.5,
-      "hours": "Monday: 9:00 AM – 1:00 AM | Tuesday: 9:00 AM – 1:00 AM | Wednesday: 9:00 AM – 1:00 AM | Thursday: 9:00 AM – 1:00 AM | Friday: 9:00 AM – 1:00 AM | Saturday: 9:00 AM – 1:00 AM | Sunday: 9:00 AM – 1:00 AM"
+      "hours": "Monday: 9:00 AM – 1:00 AM | Tuesday: 9:00 AM – 1:00 AM | Wednesday: 9:00 AM – 1:00 AM | Thursday: 9:00 AM – 1:00 AM | Friday: 9:00 AM – 1:00 AM | Saturday: 9:00 AM – 1:00 AM | Sunday: 9:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1214,7 +1493,9 @@ const restaurants = {
       "lat": 55.46936419999999,
       "lng": 9.4717184,
       "rating": 3.4,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1222,7 +1503,9 @@ const restaurants = {
       "lat": 55.537152,
       "lng": 9.717111,
       "rating": 3.4,
-      "hours": "Monday: 9:00 AM – 12:00 AM | Tuesday: 9:00 AM – 12:00 AM | Wednesday: 9:00 AM – 12:00 AM | Thursday: 9:00 AM – 12:00 AM | Friday: 9:00 AM – 12:00 AM | Saturday: 9:00 AM – 12:00 AM | Sunday: 9:00 AM – 12:00 AM"
+      "hours": "Monday: 9:00 AM – 12:00 AM | Tuesday: 9:00 AM – 12:00 AM | Wednesday: 9:00 AM – 12:00 AM | Thursday: 9:00 AM – 12:00 AM | Friday: 9:00 AM – 12:00 AM | Saturday: 9:00 AM – 12:00 AM | Sunday: 9:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1230,7 +1513,9 @@ const restaurants = {
       "lat": 55.51177180000001,
       "lng": 9.7668012,
       "rating": 3.6,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1238,7 +1523,9 @@ const restaurants = {
       "lat": 55.37759699999999,
       "lng": 10.436023,
       "rating": 3.6,
-      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 1:00 AM | Saturday: 9:00 AM – 1:00 AM | Sunday: 9:00 AM – 11:00 PM"
+      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 1:00 AM | Saturday: 9:00 AM – 1:00 AM | Sunday: 9:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1246,7 +1533,9 @@ const restaurants = {
       "lat": 55.3538332,
       "lng": 10.4202338,
       "rating": 3.8,
-      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM"
+      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1254,7 +1543,9 @@ const restaurants = {
       "lat": 55.392323,
       "lng": 11.35244,
       "rating": 3.6,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1262,7 +1553,9 @@ const restaurants = {
       "lat": 55.45303699999999,
       "lng": 11.789234,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1270,7 +1563,9 @@ const restaurants = {
       "lat": 55.62657,
       "lng": 12.091846,
       "rating": 3.4,
-      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 2:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 2:00 AM"
+      "hours": "Monday: 8:00 AM – 2:00 AM | Tuesday: 8:00 AM – 2:00 AM | Wednesday: 8:00 AM – 2:00 AM | Thursday: 8:00 AM – 2:00 AM | Friday: 8:00 AM – 3:00 AM | Saturday: 8:00 AM – 3:00 AM | Sunday: 8:00 AM – 2:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1278,7 +1573,9 @@ const restaurants = {
       "lat": 55.488286,
       "lng": 12.162618,
       "rating": 3.7,
-      "hours": "Monday: 9:00 AM – 1:00 AM | Tuesday: 9:00 AM – 1:00 AM | Wednesday: 9:00 AM – 1:00 AM | Thursday: 9:00 AM – 2:00 AM | Friday: 9:00 AM – 2:00 AM | Saturday: 9:00 AM – 2:00 AM | Sunday: 9:00 AM – 1:00 AM"
+      "hours": "Monday: 9:00 AM – 1:00 AM | Tuesday: 9:00 AM – 1:00 AM | Wednesday: 9:00 AM – 1:00 AM | Thursday: 9:00 AM – 2:00 AM | Friday: 9:00 AM – 2:00 AM | Saturday: 9:00 AM – 2:00 AM | Sunday: 9:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1286,7 +1583,9 @@ const restaurants = {
       "lat": 55.623413,
       "lng": 12.322,
       "rating": 3.8,
-      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM"
+      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1294,7 +1593,9 @@ const restaurants = {
       "lat": 55.584072,
       "lng": 12.257544,
       "rating": 3.7,
-      "hours": "Monday: 9:00 AM – 1:00 AM | Tuesday: 9:00 AM – 1:00 AM | Wednesday: 9:00 AM – 1:00 AM | Thursday: 9:00 AM – 1:00 AM | Friday: 9:00 AM – 2:00 AM | Saturday: 9:00 AM – 2:00 AM | Sunday: 9:00 AM – 1:00 AM"
+      "hours": "Monday: 9:00 AM – 1:00 AM | Tuesday: 9:00 AM – 1:00 AM | Wednesday: 9:00 AM – 1:00 AM | Thursday: 9:00 AM – 1:00 AM | Friday: 9:00 AM – 2:00 AM | Saturday: 9:00 AM – 2:00 AM | Sunday: 9:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1302,7 +1603,9 @@ const restaurants = {
       "lat": 55.6612201,
       "lng": 12.2836033,
       "rating": 4.1,
-      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 12:00 AM"
+      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1310,7 +1613,9 @@ const restaurants = {
       "lat": 55.6756676,
       "lng": 12.5666475,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 3:00 AM | Tuesday: 10:00 AM – 4:00 AM | Wednesday: 10:00 AM – 4:00 AM | Thursday: 10:00 AM – 5:00 AM | Friday: 10:00 AM – 6:00 AM | Saturday: 10:00 AM – 6:00 AM | Sunday: 10:00 AM – 2:00 AM"
+      "hours": "Monday: 10:00 AM – 3:00 AM | Tuesday: 10:00 AM – 4:00 AM | Wednesday: 10:00 AM – 4:00 AM | Thursday: 10:00 AM – 5:00 AM | Friday: 10:00 AM – 6:00 AM | Saturday: 10:00 AM – 6:00 AM | Sunday: 10:00 AM – 2:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1318,7 +1623,9 @@ const restaurants = {
       "lat": 55.67646999999999,
       "lng": 12.569591,
       "rating": 3.5,
-      "hours": "Monday: Open 24 hours | Tuesday: Open 24 hours | Wednesday: Open 24 hours | Thursday: Open 24 hours | Friday: Open 24 hours | Saturday: Open 24 hours | Sunday: Open 24 hours"
+      "hours": "Monday: Open 24 hours | Tuesday: Open 24 hours | Wednesday: Open 24 hours | Thursday: Open 24 hours | Friday: Open 24 hours | Saturday: Open 24 hours | Sunday: Open 24 hours",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1326,7 +1633,9 @@ const restaurants = {
       "lat": 55.683228,
       "lng": 12.57307,
       "rating": 3.5,
-      "hours": "Monday: Open 24 hours | Tuesday: Open 24 hours | Wednesday: Open 24 hours | Thursday: Open 24 hours | Friday: Open 24 hours | Saturday: Open 24 hours | Sunday: Open 24 hours"
+      "hours": "Monday: Open 24 hours | Tuesday: Open 24 hours | Wednesday: Open 24 hours | Thursday: Open 24 hours | Friday: Open 24 hours | Saturday: Open 24 hours | Sunday: Open 24 hours",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1334,7 +1643,9 @@ const restaurants = {
       "lat": 55.626093,
       "lng": 12.577242,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1342,7 +1653,9 @@ const restaurants = {
       "lat": 55.68688599999999,
       "lng": 12.491068,
       "rating": 4.2,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1350,7 +1663,9 @@ const restaurants = {
       "lat": 55.6291197,
       "lng": 12.6496765,
       "rating": 2.8,
-      "hours": "Monday: Open 24 hours | Tuesday: Open 24 hours | Wednesday: Open 24 hours | Thursday: Open 24 hours | Friday: Open 24 hours | Saturday: Open 24 hours | Sunday: Open 24 hours"
+      "hours": "Monday: Open 24 hours | Tuesday: Open 24 hours | Wednesday: Open 24 hours | Thursday: Open 24 hours | Friday: Open 24 hours | Saturday: Open 24 hours | Sunday: Open 24 hours",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1358,7 +1673,9 @@ const restaurants = {
       "lat": 55.6511038,
       "lng": 12.5094695,
       "rating": 3.5,
-      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 12:00 AM"
+      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1366,7 +1683,9 @@ const restaurants = {
       "lat": 55.692262,
       "lng": 12.434087,
       "rating": 3.6,
-      "hours": "Monday: 9:00 AM – 12:00 AM | Tuesday: 9:00 AM – 12:00 AM | Wednesday: 9:00 AM – 12:00 AM | Thursday: 9:00 AM – 12:00 AM | Friday: 9:00 AM – 12:00 AM | Saturday: 9:00 AM – 12:00 AM | Sunday: 9:00 AM – 12:00 AM"
+      "hours": "Monday: 9:00 AM – 12:00 AM | Tuesday: 9:00 AM – 12:00 AM | Wednesday: 9:00 AM – 12:00 AM | Thursday: 9:00 AM – 12:00 AM | Friday: 9:00 AM – 12:00 AM | Saturday: 9:00 AM – 12:00 AM | Sunday: 9:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1374,7 +1693,9 @@ const restaurants = {
       "lat": 55.6549807,
       "lng": 12.3949522,
       "rating": 3.9,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1382,7 +1703,9 @@ const restaurants = {
       "lat": 55.92732299999999,
       "lng": 9.1592269,
       "rating": 3.6,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1390,7 +1713,9 @@ const restaurants = {
       "lat": 55.885824,
       "lng": 9.78781,
       "rating": 3.8,
-      "hours": "Monday: 9:00 AM – 1:00 AM | Tuesday: 9:00 AM – 1:00 AM | Wednesday: 9:00 AM – 1:00 AM | Thursday: 9:00 AM – 1:00 AM | Friday: 9:00 AM – 2:00 AM | Saturday: 9:00 AM – 2:00 AM | Sunday: 9:00 AM – 1:00 AM"
+      "hours": "Monday: 9:00 AM – 1:00 AM | Tuesday: 9:00 AM – 1:00 AM | Wednesday: 9:00 AM – 1:00 AM | Thursday: 9:00 AM – 1:00 AM | Friday: 9:00 AM – 2:00 AM | Saturday: 9:00 AM – 2:00 AM | Sunday: 9:00 AM – 1:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1398,7 +1723,9 @@ const restaurants = {
       "lat": 55.786077,
       "lng": 9.668175999999999,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1406,7 +1733,9 @@ const restaurants = {
       "lat": 56.146283,
       "lng": 9.919029,
       "rating": 3.5,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1414,7 +1743,9 @@ const restaurants = {
       "lat": 56.15079,
       "lng": 10.203628,
       "rating": 3.6,
-      "hours": "Monday: 9:30 AM – 12:00 AM | Tuesday: 12:30 – 1:00 AM, 9:30 AM – 12:00 AM | Wednesday: 12:30 – 1:00 AM, 9:30 AM – 12:00 AM | Thursday: 12:30 – 1:00 AM, 9:30 AM – 12:00 AM | Friday: Open 24 hours | Saturday: Open 24 hours | Sunday: 9:30 AM – 12:00 AM"
+      "hours": "Monday: 9:30 AM – 12:00 AM | Tuesday: 12:30 – 1:00 AM, 9:30 AM – 12:00 AM | Wednesday: 12:30 – 1:00 AM, 9:30 AM – 12:00 AM | Thursday: 12:30 – 1:00 AM, 9:30 AM – 12:00 AM | Friday: Open 24 hours | Saturday: Open 24 hours | Sunday: 9:30 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1422,7 +1753,9 @@ const restaurants = {
       "lat": 56.13093749999999,
       "lng": 10.1600737,
       "rating": 3.5,
-      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 1:00 AM | Saturday: 10:00 AM – 1:00 AM | Sunday: 10:00 AM – 12:00 AM"
+      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 1:00 AM | Saturday: 10:00 AM – 1:00 AM | Sunday: 10:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1430,7 +1763,9 @@ const restaurants = {
       "lat": 55.932956,
       "lng": 12.261912,
       "rating": 3.4,
-      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM"
+      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1438,7 +1773,9 @@ const restaurants = {
       "lat": 55.836218,
       "lng": 12.064767,
       "rating": 3.5,
-      "hours": "Monday: 11:00 AM – 8:00 PM | Tuesday: 11:00 AM – 8:00 PM | Wednesday: 11:00 AM – 8:00 PM | Thursday: 11:00 AM – 8:00 PM | Friday: 11:00 AM – 8:00 PM | Saturday: 11:00 AM – 8:00 PM | Sunday: 11:00 AM – 4:00 PM"
+      "hours": "Monday: 11:00 AM – 8:00 PM | Tuesday: 11:00 AM – 8:00 PM | Wednesday: 11:00 AM – 8:00 PM | Thursday: 11:00 AM – 8:00 PM | Friday: 11:00 AM – 8:00 PM | Saturday: 11:00 AM – 8:00 PM | Sunday: 11:00 AM – 4:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1446,7 +1783,9 @@ const restaurants = {
       "lat": 55.7712642,
       "lng": 12.5075849,
       "rating": 4.1,
-      "hours": "Monday: 11:00 AM – 9:45 PM | Tuesday: 11:00 AM – 9:45 PM | Wednesday: 11:00 AM – 9:45 PM | Thursday: 11:00 AM – 9:45 PM | Friday: 11:00 AM – 9:45 PM | Saturday: 11:00 AM – 9:45 PM | Sunday: 11:00 AM – 9:45 PM"
+      "hours": "Monday: 11:00 AM – 9:45 PM | Tuesday: 11:00 AM – 9:45 PM | Wednesday: 11:00 AM – 9:45 PM | Thursday: 11:00 AM – 9:45 PM | Friday: 11:00 AM – 9:45 PM | Saturday: 11:00 AM – 9:45 PM | Sunday: 11:00 AM – 9:45 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1454,7 +1793,9 @@ const restaurants = {
       "lat": 56.376296,
       "lng": 8.619137,
       "rating": 3.5,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1462,7 +1803,9 @@ const restaurants = {
       "lat": 56.450081,
       "lng": 9.38797,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1470,7 +1813,9 @@ const restaurants = {
       "lat": 56.185377,
       "lng": 9.543656,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1478,7 +1823,9 @@ const restaurants = {
       "lat": 56.41209869999999,
       "lng": 10.0769064,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 12:00 AM"
+      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1486,7 +1833,9 @@ const restaurants = {
       "lat": 56.2253669,
       "lng": 10.2381914,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1494,7 +1843,9 @@ const restaurants = {
       "lat": 56.480461,
       "lng": 10.026281,
       "rating": 4,
-      "hours": "Monday: 9:30 AM – 11:30 PM | Tuesday: 9:30 AM – 11:30 PM | Wednesday: 9:30 AM – 11:30 PM | Thursday: 9:00 AM – 11:30 PM | Friday: 9:00 AM – 11:30 PM | Saturday: 9:00 AM – 11:30 PM | Sunday: 9:30 AM – 11:30 PM"
+      "hours": "Monday: 9:30 AM – 11:30 PM | Tuesday: 9:30 AM – 11:30 PM | Wednesday: 9:30 AM – 11:30 PM | Thursday: 9:00 AM – 11:30 PM | Friday: 9:00 AM – 11:30 PM | Saturday: 9:00 AM – 11:30 PM | Sunday: 9:30 AM – 11:30 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1502,7 +1853,9 @@ const restaurants = {
       "lat": 56.172861,
       "lng": 10.2113052,
       "rating": 3.5,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1510,14 +1863,18 @@ const restaurants = {
       "lat": 56.181265,
       "lng": 10.125056,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
       "address": "Østergårdsbakken 1A, 7800 Skive, Denmark",
       "lat": 56.56968490000001,
       "lng": 8.9982056,
-      "hours": null
+      "hours": null,
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1525,7 +1882,9 @@ const restaurants = {
       "lat": 56.7843811,
       "lng": 9.6952471,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1533,7 +1892,9 @@ const restaurants = {
       "lat": 57.049374,
       "lng": 9.922291,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 12:00 AM | Saturday: Open 24 hours | Sunday: Open 24 hours"
+      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 12:00 AM | Saturday: Open 24 hours | Sunday: Open 24 hours",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1541,7 +1902,9 @@ const restaurants = {
       "lat": 57.0060742,
       "lng": 9.8815054,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1549,7 +1912,9 @@ const restaurants = {
       "lat": 56.95296339999999,
       "lng": 9.864759699999999,
       "rating": 4,
-      "hours": "Monday: 9:00 AM – 12:00 AM | Tuesday: 9:00 AM – 12:00 AM | Wednesday: 9:00 AM – 12:00 AM | Thursday: 9:00 AM – 12:00 AM | Friday: 9:00 AM – 12:00 AM | Saturday: 9:00 AM – 12:00 AM | Sunday: 9:00 AM – 12:00 AM"
+      "hours": "Monday: 9:00 AM – 12:00 AM | Tuesday: 9:00 AM – 12:00 AM | Wednesday: 9:00 AM – 12:00 AM | Thursday: 9:00 AM – 12:00 AM | Friday: 9:00 AM – 12:00 AM | Saturday: 9:00 AM – 12:00 AM | Sunday: 9:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1557,7 +1922,9 @@ const restaurants = {
       "lat": 57.1502648,
       "lng": 9.7491404,
       "rating": 4.4,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1565,7 +1932,9 @@ const restaurants = {
       "lat": 57.45555700000001,
       "lng": 10.015598,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1573,7 +1942,9 @@ const restaurants = {
       "lat": 57.445022,
       "lng": 10.539916,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Burger King",
@@ -1581,7 +1952,9 @@ const restaurants = {
       "lat": 55.6312,
       "lng": 12.5773,
       "rating": 4.2,
-      "hours": null
+      "hours": null,
+      "status": "active",
+      "addedDate": "2026-01-30"
     }
   ],
   "sunset": [
@@ -1591,7 +1964,9 @@ const restaurants = {
       "lat": 54.9203784,
       "lng": 9.8096122,
       "rating": 4,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard Lalandia",
@@ -1599,7 +1974,9 @@ const restaurants = {
       "lat": 54.6661758,
       "lng": 11.3325192,
       "rating": 2.6,
-      "hours": "Monday: Closed | Tuesday: Closed | Wednesday: Closed | Thursday: Closed | Friday: 11:00 AM – 8:30 PM | Saturday: 10:30 AM – 8:30 PM | Sunday: 10:30 AM – 3:00 PM"
+      "hours": "Monday: Closed | Tuesday: Closed | Wednesday: Closed | Thursday: Closed | Friday: 11:00 AM – 8:30 PM | Saturday: 10:30 AM – 8:30 PM | Sunday: 10:30 AM – 3:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1607,7 +1984,9 @@ const restaurants = {
       "lat": 55.0682519,
       "lng": 9.3609826,
       "rating": 4.1,
-      "hours": "Monday: 9:00 AM – 10:00 PM | Tuesday: 9:00 AM – 10:00 PM | Wednesday: 9:00 AM – 10:00 PM | Thursday: 9:00 AM – 10:00 PM | Friday: 9:00 AM – 10:00 PM | Saturday: 9:00 AM – 10:00 PM | Sunday: 9:00 AM – 10:00 PM"
+      "hours": "Monday: 9:00 AM – 10:00 PM | Tuesday: 9:00 AM – 10:00 PM | Wednesday: 9:00 AM – 10:00 PM | Thursday: 9:00 AM – 10:00 PM | Friday: 9:00 AM – 10:00 PM | Saturday: 9:00 AM – 10:00 PM | Sunday: 9:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1615,7 +1994,9 @@ const restaurants = {
       "lat": 55.2467937,
       "lng": 9.482036299999999,
       "rating": 3.8,
-      "hours": "Monday: 9:00 AM – 10:00 PM | Tuesday: 9:00 AM – 10:00 PM | Wednesday: 9:00 AM – 10:00 PM | Thursday: 9:00 AM – 10:00 PM | Friday: 9:00 AM – 10:00 PM | Saturday: 9:00 AM – 10:00 PM | Sunday: 9:00 AM – 10:00 PM"
+      "hours": "Monday: 9:00 AM – 10:00 PM | Tuesday: 9:00 AM – 10:00 PM | Wednesday: 9:00 AM – 10:00 PM | Thursday: 9:00 AM – 10:00 PM | Friday: 9:00 AM – 10:00 PM | Saturday: 9:00 AM – 10:00 PM | Sunday: 9:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1623,7 +2004,9 @@ const restaurants = {
       "lat": 55.307568,
       "lng": 10.8127657,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1631,7 +2014,9 @@ const restaurants = {
       "lat": 55.256023,
       "lng": 11.805153,
       "rating": 4.1,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1639,7 +2024,9 @@ const restaurants = {
       "lat": 55.47778049999999,
       "lng": 8.4878625,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 11:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 11:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1647,7 +2034,9 @@ const restaurants = {
       "lat": 55.5080524,
       "lng": 8.4501864,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 11:00 AM – 9:00 PM"
+      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 11:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1655,7 +2044,9 @@ const restaurants = {
       "lat": 55.7462519,
       "lng": 9.1479684,
       "rating": 3.8,
-      "hours": "Monday: 5:00 AM – 10:00 PM | Tuesday: 5:00 AM – 10:00 PM | Wednesday: 5:00 AM – 10:00 PM | Thursday: 5:00 AM – 10:00 PM | Friday: 5:00 AM – 10:00 PM | Saturday: 5:00 AM – 10:00 PM | Sunday: 5:00 AM – 10:00 PM"
+      "hours": "Monday: 5:00 AM – 10:00 PM | Tuesday: 5:00 AM – 10:00 PM | Wednesday: 5:00 AM – 10:00 PM | Thursday: 5:00 AM – 10:00 PM | Friday: 5:00 AM – 10:00 PM | Saturday: 5:00 AM – 10:00 PM | Sunday: 5:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1663,7 +2054,9 @@ const restaurants = {
       "lat": 55.72659290000001,
       "lng": 9.5809435,
       "rating": 3.8,
-      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM"
+      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1671,7 +2064,9 @@ const restaurants = {
       "lat": 55.5131995,
       "lng": 9.456206,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1679,7 +2074,9 @@ const restaurants = {
       "lat": 55.5138332,
       "lng": 9.4620686,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM"
+      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1687,7 +2084,9 @@ const restaurants = {
       "lat": 55.5355576,
       "lng": 9.7167257,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1695,7 +2094,9 @@ const restaurants = {
       "lat": 55.41277400000001,
       "lng": 10.057021,
       "rating": 4,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1703,7 +2104,9 @@ const restaurants = {
       "lat": 55.35414,
       "lng": 10.4208977,
       "rating": 4,
-      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM"
+      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1711,7 +2114,9 @@ const restaurants = {
       "lat": 55.3866994,
       "lng": 10.4280892,
       "rating": 4.1,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1719,7 +2124,9 @@ const restaurants = {
       "lat": 55.3846115,
       "lng": 10.4272599,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM"
+      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1727,7 +2134,9 @@ const restaurants = {
       "lat": 55.3540192,
       "lng": 11.14028,
       "rating": 4.1,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1735,7 +2144,9 @@ const restaurants = {
       "lat": 55.39216649999999,
       "lng": 11.3530159,
       "rating": 3.9,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1743,7 +2154,9 @@ const restaurants = {
       "lat": 55.452842,
       "lng": 11.788884,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1751,7 +2164,9 @@ const restaurants = {
       "lat": 55.5846921,
       "lng": 12.2583713,
       "rating": 4,
-      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM"
+      "hours": "Monday: 9:00 AM – 11:00 PM | Tuesday: 9:00 AM – 11:00 PM | Wednesday: 9:00 AM – 11:00 PM | Thursday: 9:00 AM – 11:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1759,7 +2174,9 @@ const restaurants = {
       "lat": 55.6610799,
       "lng": 12.2836407,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1767,7 +2184,9 @@ const restaurants = {
       "lat": 55.7131976,
       "lng": 12.4184839,
       "rating": 3.9,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1775,7 +2194,9 @@ const restaurants = {
       "lat": 55.6729396,
       "lng": 12.5647538,
       "rating": 2.8,
-      "hours": "Monday: 9:00 AM – 10:00 PM | Tuesday: 9:00 AM – 10:00 PM | Wednesday: 9:00 AM – 10:00 PM | Thursday: 9:00 AM – 10:00 PM | Friday: 9:00 AM – 10:00 PM | Saturday: 9:00 AM – 10:00 PM | Sunday: 9:00 AM – 10:00 PM"
+      "hours": "Monday: 9:00 AM – 10:00 PM | Tuesday: 9:00 AM – 10:00 PM | Wednesday: 9:00 AM – 10:00 PM | Thursday: 9:00 AM – 10:00 PM | Friday: 9:00 AM – 10:00 PM | Saturday: 9:00 AM – 10:00 PM | Sunday: 9:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1783,7 +2204,9 @@ const restaurants = {
       "lat": 55.66139099999999,
       "lng": 12.5617202,
       "rating": 3.5,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1791,7 +2214,9 @@ const restaurants = {
       "lat": 55.676679,
       "lng": 12.5700436,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1799,7 +2224,9 @@ const restaurants = {
       "lat": 55.63021879999999,
       "lng": 12.5784972,
       "rating": 3.6,
-      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM"
+      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1807,7 +2234,9 @@ const restaurants = {
       "lat": 55.6797233,
       "lng": 12.4568919,
       "rating": 3.2,
-      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 8:00 PM | Sunday: 10:00 AM – 8:00 PM"
+      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 8:00 PM | Sunday: 10:00 AM – 8:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1815,7 +2244,9 @@ const restaurants = {
       "lat": 56.1359562,
       "lng": 9.003086,
       "rating": 3.9,
-      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM"
+      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1823,7 +2254,9 @@ const restaurants = {
       "lat": 55.7868205,
       "lng": 9.6679061,
       "rating": 3.8,
-      "hours": "Monday: 9:00 AM – 10:00 PM | Tuesday: 9:00 AM – 10:00 PM | Wednesday: 9:00 AM – 10:00 PM | Thursday: 9:00 AM – 10:00 PM | Friday: 9:00 AM – 10:00 PM | Saturday: 9:00 AM – 10:00 PM | Sunday: 9:00 AM – 10:00 PM"
+      "hours": "Monday: 9:00 AM – 10:00 PM | Tuesday: 9:00 AM – 10:00 PM | Wednesday: 9:00 AM – 10:00 PM | Thursday: 9:00 AM – 10:00 PM | Friday: 9:00 AM – 10:00 PM | Saturday: 9:00 AM – 10:00 PM | Sunday: 9:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1831,7 +2264,9 @@ const restaurants = {
       "lat": 55.8583259,
       "lng": 9.8477301,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1839,7 +2274,9 @@ const restaurants = {
       "lat": 56.1492279,
       "lng": 10.2058115,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM"
+      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1847,7 +2284,9 @@ const restaurants = {
       "lat": 55.934164,
       "lng": 12.2614951,
       "rating": 3.8,
-      "hours": "Monday: 9:00 AM – 12:00 AM | Tuesday: 9:00 AM – 12:00 AM | Wednesday: 9:00 AM – 12:00 AM | Thursday: 9:00 AM – 12:00 AM | Friday: 9:00 AM – 12:00 AM | Saturday: 9:00 AM – 12:00 AM | Sunday: 9:00 AM – 12:00 AM"
+      "hours": "Monday: 9:00 AM – 12:00 AM | Tuesday: 9:00 AM – 12:00 AM | Wednesday: 9:00 AM – 12:00 AM | Thursday: 9:00 AM – 12:00 AM | Friday: 9:00 AM – 12:00 AM | Saturday: 9:00 AM – 12:00 AM | Sunday: 9:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1855,7 +2294,9 @@ const restaurants = {
       "lat": 56.3764779,
       "lng": 8.6197699,
       "rating": 3.9,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1863,7 +2304,9 @@ const restaurants = {
       "lat": 56.4497472,
       "lng": 9.388127899999999,
       "rating": 4,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1871,7 +2314,9 @@ const restaurants = {
       "lat": 56.170618,
       "lng": 9.552569499999999,
       "rating": 3.9,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1879,7 +2324,9 @@ const restaurants = {
       "lat": 56.4492586,
       "lng": 9.4052598,
       "rating": 4,
-      "hours": "Monday: 9:30 AM – 9:00 PM | Tuesday: 9:30 AM – 9:00 PM | Wednesday: 9:30 AM – 9:00 PM | Thursday: 9:30 AM – 9:00 PM | Friday: 9:30 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM"
+      "hours": "Monday: 9:30 AM – 9:00 PM | Tuesday: 9:30 AM – 9:00 PM | Wednesday: 9:30 AM – 9:00 PM | Thursday: 9:30 AM – 9:00 PM | Friday: 9:30 AM – 9:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1887,7 +2334,9 @@ const restaurants = {
       "lat": 56.1813455,
       "lng": 10.1244882,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1895,7 +2344,9 @@ const restaurants = {
       "lat": 56.4128795,
       "lng": 10.0753402,
       "rating": 3.7,
-      "hours": "Monday: 9:00 AM – 10:00 PM | Tuesday: 9:00 AM – 10:00 PM | Wednesday: 9:00 AM – 10:00 PM | Thursday: 9:00 AM – 10:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 10:00 PM"
+      "hours": "Monday: 9:00 AM – 10:00 PM | Tuesday: 9:00 AM – 10:00 PM | Wednesday: 9:00 AM – 10:00 PM | Thursday: 9:00 AM – 10:00 PM | Friday: 9:00 AM – 11:00 PM | Saturday: 9:00 AM – 11:00 PM | Sunday: 9:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1903,7 +2354,9 @@ const restaurants = {
       "lat": 56.2062902,
       "lng": 10.1741246,
       "rating": 4,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1911,7 +2364,9 @@ const restaurants = {
       "lat": 56.2013544,
       "lng": 10.243843,
       "rating": 3.6,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1919,7 +2374,9 @@ const restaurants = {
       "lat": 56.7831364,
       "lng": 9.6912833,
       "rating": 3.9,
-      "hours": "Monday: 9:00 AM – 10:00 PM | Tuesday: 9:00 AM – 10:00 PM | Wednesday: 9:00 AM – 10:00 PM | Thursday: 9:00 AM – 10:00 PM | Friday: 9:00 AM – 10:00 PM | Saturday: 9:00 AM – 10:00 PM | Sunday: 9:00 AM – 10:00 PM"
+      "hours": "Monday: 9:00 AM – 10:00 PM | Tuesday: 9:00 AM – 10:00 PM | Wednesday: 9:00 AM – 10:00 PM | Thursday: 9:00 AM – 10:00 PM | Friday: 9:00 AM – 10:00 PM | Saturday: 9:00 AM – 10:00 PM | Sunday: 9:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1927,7 +2384,9 @@ const restaurants = {
       "lat": 57.0889007,
       "lng": 9.9698478,
       "rating": 4,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1935,7 +2394,9 @@ const restaurants = {
       "lat": 57.04234899999999,
       "lng": 9.9188692,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1943,7 +2404,9 @@ const restaurants = {
       "lat": 57.00392309999999,
       "lng": 9.874344599999999,
       "rating": 3.9,
-      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM"
+      "hours": "Monday: 10:00 AM – 9:00 PM | Tuesday: 10:00 AM – 9:00 PM | Wednesday: 10:00 AM – 9:00 PM | Thursday: 10:00 AM – 9:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 9:00 PM | Sunday: 10:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1951,7 +2414,9 @@ const restaurants = {
       "lat": 57.4555773,
       "lng": 10.0416219,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Sunset Boulevard",
@@ -1959,7 +2424,9 @@ const restaurants = {
       "lat": 57.44722700000001,
       "lng": 10.506838,
       "rating": 4,
-      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM"
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     }
   ],
   "max": [
@@ -1969,7 +2436,9 @@ const restaurants = {
       "lat": 55.4532928,
       "lng": 11.7863729,
       "rating": 3.5,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 5:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 5:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "MAX Burgers",
@@ -1977,7 +2446,9 @@ const restaurants = {
       "lat": 55.61384169999999,
       "lng": 12.3604774,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 11:00 PM"
+      "hours": "Monday: 10:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 11:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "MAX Burgers",
@@ -1985,7 +2456,9 @@ const restaurants = {
       "lat": 55.6783194,
       "lng": 12.5727486,
       "rating": 3.8,
-      "hours": "Monday: 10:00 AM – 2:00 AM | Tuesday: 10:00 AM – 2:00 AM | Wednesday: 10:00 AM – 2:00 AM | Thursday: 10:00 AM – 6:00 AM | Friday: 10:00 AM – 6:00 AM | Saturday: 10:00 AM – 6:00 AM | Sunday: 10:00 AM – 2:00 AM"
+      "hours": "Monday: 10:00 AM – 2:00 AM | Tuesday: 10:00 AM – 2:00 AM | Wednesday: 10:00 AM – 2:00 AM | Thursday: 10:00 AM – 6:00 AM | Friday: 10:00 AM – 6:00 AM | Saturday: 10:00 AM – 6:00 AM | Sunday: 10:00 AM – 2:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "MAX Burgers",
@@ -1993,7 +2466,9 @@ const restaurants = {
       "lat": 55.6727496,
       "lng": 12.5638922,
       "rating": 3.5,
-      "hours": "Monday: 8:00 AM – 1:45 AM | Tuesday: 8:00 AM – 1:45 AM | Wednesday: 8:00 AM – 1:45 AM | Thursday: 8:00 AM – 1:45 AM | Friday: 8:00 AM – 6:00 AM | Saturday: 8:00 AM – 6:00 AM | Sunday: 8:00 AM – 1:45 AM"
+      "hours": "Monday: 8:00 AM – 1:45 AM | Tuesday: 8:00 AM – 1:45 AM | Wednesday: 8:00 AM – 1:45 AM | Thursday: 8:00 AM – 1:45 AM | Friday: 8:00 AM – 6:00 AM | Saturday: 8:00 AM – 6:00 AM | Sunday: 8:00 AM – 1:45 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "MAX Burgers",
@@ -2001,7 +2476,9 @@ const restaurants = {
       "lat": 55.7186287,
       "lng": 12.4503753,
       "rating": 3.6,
-      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 5:00 PM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 12:00 AM"
+      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 5:00 PM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 12:00 AM | Saturday: 10:00 AM – 12:00 AM | Sunday: 10:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "MAX Burgers",
@@ -2009,7 +2486,9 @@ const restaurants = {
       "lat": 55.6634775,
       "lng": 12.5608556,
       "rating": 3.7,
-      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 5:00 AM | Saturday: 10:00 AM – 5:00 AM | Sunday: 10:00 AM – 12:00 AM"
+      "hours": "Monday: 10:00 AM – 12:00 AM | Tuesday: 10:00 AM – 12:00 AM | Wednesday: 10:00 AM – 12:00 AM | Thursday: 10:00 AM – 12:00 AM | Friday: 10:00 AM – 5:00 AM | Saturday: 10:00 AM – 5:00 AM | Sunday: 10:00 AM – 12:00 AM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     }
   ],
   "jagger": [
@@ -2019,7 +2498,9 @@ const restaurants = {
       "lat": 55.6697561,
       "lng": 12.5549108,
       "rating": 4,
-      "hours": "Monday: 11:00 AM – 10:00 PM | Tuesday: 11:00 AM – 10:00 PM | Wednesday: 11:00 AM – 10:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 11:00 PM | Saturday: 11:00 AM – 11:00 PM | Sunday: 11:00 AM – 10:00 PM"
+      "hours": "Monday: 11:00 AM – 10:00 PM | Tuesday: 11:00 AM – 10:00 PM | Wednesday: 11:00 AM – 10:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 11:00 PM | Saturday: 11:00 AM – 11:00 PM | Sunday: 11:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Jagger Nørrebro",
@@ -2027,7 +2508,9 @@ const restaurants = {
       "lat": 55.6936815,
       "lng": 12.5500959,
       "rating": 3.9,
-      "hours": "Monday: 11:00 AM – 10:00 PM | Tuesday: 11:00 AM – 10:00 PM | Wednesday: 11:00 AM – 10:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 11:00 PM | Saturday: 11:00 AM – 11:00 PM | Sunday: 11:00 AM – 10:00 PM"
+      "hours": "Monday: 11:00 AM – 10:00 PM | Tuesday: 11:00 AM – 10:00 PM | Wednesday: 11:00 AM – 10:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 11:00 PM | Saturday: 11:00 AM – 11:00 PM | Sunday: 11:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "JAGGER - Burger på Falkoner Allé",
@@ -2035,7 +2518,9 @@ const restaurants = {
       "lat": 55.68501029999999,
       "lng": 12.5384717,
       "rating": 3.9,
-      "hours": "Monday: 11:00 AM – 10:00 PM | Tuesday: 11:00 AM – 10:00 PM | Wednesday: 11:00 AM – 10:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 10:00 PM"
+      "hours": "Monday: 11:00 AM – 10:00 PM | Tuesday: 11:00 AM – 10:00 PM | Wednesday: 11:00 AM – 10:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "JAGGER - Burger på Rådhuspladsen",
@@ -2043,7 +2528,9 @@ const restaurants = {
       "lat": 55.6764862,
       "lng": 12.5667181,
       "rating": 4.1,
-      "hours": "Monday: 11:00 AM – 10:00 PM | Tuesday: 11:00 AM – 10:00 PM | Wednesday: 11:00 AM – 10:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 11:00 PM | Saturday: 11:00 AM – 11:00 PM | Sunday: 11:00 AM – 10:00 PM"
+      "hours": "Monday: 11:00 AM – 10:00 PM | Tuesday: 11:00 AM – 10:00 PM | Wednesday: 11:00 AM – 10:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 11:00 PM | Saturday: 11:00 AM – 11:00 PM | Sunday: 11:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Jagger",
@@ -2051,7 +2538,9 @@ const restaurants = {
       "lat": 55.70241739999999,
       "lng": 12.5835733,
       "rating": 3.9,
-      "hours": "Monday: 11:00 AM – 10:00 PM | Tuesday: 11:00 AM – 10:00 PM | Wednesday: 11:00 AM – 10:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 10:00 PM"
+      "hours": "Monday: 11:00 AM – 10:00 PM | Tuesday: 11:00 AM – 10:00 PM | Wednesday: 11:00 AM – 10:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "JAGGER - Burger i Nordhavn",
@@ -2059,7 +2548,9 @@ const restaurants = {
       "lat": 55.7070988,
       "lng": 12.5963673,
       "rating": 4.2,
-      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 9:00 PM"
+      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Jagger Amager",
@@ -2067,7 +2558,9 @@ const restaurants = {
       "lat": 55.6576912,
       "lng": 12.6081245,
       "rating": 3.9,
-      "hours": "Monday: 11:00 AM – 10:00 PM | Tuesday: 11:00 AM – 10:00 PM | Wednesday: 11:00 AM – 10:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 10:00 PM"
+      "hours": "Monday: 11:00 AM – 10:00 PM | Tuesday: 11:00 AM – 10:00 PM | Wednesday: 11:00 AM – 10:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 10:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Jagger",
@@ -2075,7 +2568,9 @@ const restaurants = {
       "lat": 55.6665088,
       "lng": 12.5176542,
       "rating": 4,
-      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 9:00 PM"
+      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "JAGGER - Burger i Vanløse",
@@ -2083,7 +2578,9 @@ const restaurants = {
       "lat": 55.6877924,
       "lng": 12.489685,
       "rating": 3.9,
-      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 9:00 PM"
+      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Jagger",
@@ -2091,7 +2588,9 @@ const restaurants = {
       "lat": 55.6648581,
       "lng": 12.6223026,
       "rating": 3.9,
-      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 9:00 PM"
+      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "JAGGER - Burger i København K",
@@ -2099,7 +2598,9 @@ const restaurants = {
       "lat": 55.6808312,
       "lng": 12.5770351,
       "rating": 4.1,
-      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 10:30 AM – 9:00 PM | Friday: 10:30 AM – 11:00 PM | Saturday: 10:30 AM – 11:00 PM | Sunday: 11:00 AM – 9:00 PM"
+      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 10:30 AM – 9:00 PM | Friday: 10:30 AM – 11:00 PM | Saturday: 10:30 AM – 11:00 PM | Sunday: 11:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Jagger",
@@ -2107,7 +2608,9 @@ const restaurants = {
       "lat": 55.7303004,
       "lng": 12.576273,
       "rating": 4.1,
-      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 9:00 PM | Friday: 11:00 AM – 9:00 PM | Saturday: 11:00 AM – 9:00 PM | Sunday: 11:00 AM – 9:00 PM"
+      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 9:00 PM | Friday: 11:00 AM – 9:00 PM | Saturday: 11:00 AM – 9:00 PM | Sunday: 11:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Jagger",
@@ -2115,7 +2618,9 @@ const restaurants = {
       "lat": 55.705033,
       "lng": 12.496611,
       "rating": 3.9,
-      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 9:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 9:00 PM"
+      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 9:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "JAGGER - Burger Rødovre",
@@ -2123,7 +2628,9 @@ const restaurants = {
       "lat": 55.6794699,
       "lng": 12.4576368,
       "rating": 3.5,
-      "hours": "Monday: 10:00 AM – 8:00 PM | Tuesday: 10:00 AM – 8:00 PM | Wednesday: 10:00 AM – 8:00 PM | Thursday: 10:00 AM – 8:00 PM | Friday: 10:00 AM – 8:00 PM | Saturday: 10:00 AM – 8:00 PM | Sunday: 10:00 AM – 8:00 PM"
+      "hours": "Monday: 10:00 AM – 8:00 PM | Tuesday: 10:00 AM – 8:00 PM | Wednesday: 10:00 AM – 8:00 PM | Thursday: 10:00 AM – 8:00 PM | Friday: 10:00 AM – 8:00 PM | Saturday: 10:00 AM – 8:00 PM | Sunday: 10:00 AM – 8:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Jagger",
@@ -2131,7 +2638,9 @@ const restaurants = {
       "lat": 55.7310874,
       "lng": 12.5197827,
       "rating": 3.9,
-      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 9:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 9:00 PM"
+      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 9:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Jagger",
@@ -2139,7 +2648,9 @@ const restaurants = {
       "lat": 55.6815831,
       "lng": 12.5326772,
       "rating": 3.4,
-      "hours": "Monday: 10:00 AM – 7:00 PM | Tuesday: 10:00 AM – 7:00 PM | Wednesday: 10:00 AM – 7:00 PM | Thursday: 10:00 AM – 7:00 PM | Friday: 10:00 AM – 7:00 PM | Saturday: 10:00 AM – 7:00 PM | Sunday: 10:00 AM – 7:00 PM"
+      "hours": "Monday: 10:00 AM – 7:00 PM | Tuesday: 10:00 AM – 7:00 PM | Wednesday: 10:00 AM – 7:00 PM | Thursday: 10:00 AM – 7:00 PM | Friday: 10:00 AM – 7:00 PM | Saturday: 10:00 AM – 7:00 PM | Sunday: 10:00 AM – 7:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Jagger",
@@ -2147,7 +2658,9 @@ const restaurants = {
       "lat": 55.6448185,
       "lng": 12.5472914,
       "rating": 4.2,
-      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 9:00 PM | Friday: 11:00 AM – 9:00 PM | Saturday: 11:00 AM – 9:00 PM | Sunday: 11:00 AM – 9:00 PM"
+      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 9:00 PM | Friday: 11:00 AM – 9:00 PM | Saturday: 11:00 AM – 9:00 PM | Sunday: 11:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     },
     {
       "name": "Jagger",
@@ -2155,7 +2668,9 @@ const restaurants = {
       "lat": 55.77131379999999,
       "lng": 12.5070861,
       "rating": 3.5,
-      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 9:00 PM"
+      "hours": "Monday: 11:00 AM – 9:00 PM | Tuesday: 11:00 AM – 9:00 PM | Wednesday: 11:00 AM – 9:00 PM | Thursday: 11:00 AM – 10:00 PM | Friday: 11:00 AM – 10:00 PM | Saturday: 11:00 AM – 10:00 PM | Sunday: 11:00 AM – 9:00 PM",
+      "status": "active",
+      "addedDate": "2026-01-30"
     }
   ]
 };

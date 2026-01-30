@@ -179,7 +179,7 @@ function renderList() {
         return (a.name || '').localeCompare(b.name || '');
     });
 
-    // Render compact list with logos and opening hours
+    // Render compact list with logos, opening hours, and status
     container.innerHTML = allRestaurants.map(r => {
         const config = brandConfig[r.brand];
         const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${r.lat},${r.lng}`;
@@ -191,10 +191,14 @@ function renderList() {
             const todayHours = hoursArray.find(h => h.startsWith(today));
             hoursDisplay = todayHours ? todayHours.replace(today + ': ', '') : hoursArray[0]?.split(': ')[1] || '';
         }
+        // Status class for styling
+        const statusClass = r.status === 'new' ? 'status-new' : (r.status === 'closed' ? 'status-closed' : '');
+        const statusBadge = r.status === 'new' ? '<span class="status-badge new">NY</span>' :
+                           (r.status === 'closed' ? '<span class="status-badge closed">LUKKET</span>' : '');
         return `
-            <div class="restaurant-item compact" data-lat="${r.lat}" data-lng="${r.lng}" data-maps-url="${googleMapsUrl}">
+            <div class="restaurant-item compact ${statusClass}" data-lat="${r.lat}" data-lng="${r.lng}" data-maps-url="${googleMapsUrl}">
                 <img class="brand-logo" src="${config.logo}" alt="${config.name}" onerror="this.style.display='none'">
-                <span class="restaurant-name">${r.name || 'Unavngivet'}</span>
+                <span class="restaurant-name">${statusBadge}${r.name || 'Unavngivet'}</span>
                 <span class="restaurant-address">${r.address || ''}</span>
                 ${r.rating ? `<span class="rating">★ ${r.rating}</span>` : '<span class="rating"></span>'}
                 <span class="restaurant-hours">${hoursDisplay}</span>
@@ -272,10 +276,24 @@ async function enrichWithGoogleData() {
     console.log(JSON.stringify(restaurants, null, 2));
 }
 
+// Populate admin section with metadata
+function updateAdminInfo() {
+    if (typeof restaurantMetadata !== 'undefined') {
+        const lastUpdated = document.getElementById('last-updated');
+        const baselineDate = document.getElementById('baseline-date');
+        const totalRestaurants = document.getElementById('total-restaurants');
+
+        if (lastUpdated) lastUpdated.textContent = restaurantMetadata.lastUpdated || '-';
+        if (baselineDate) baselineDate.textContent = restaurantMetadata.baselineDate || '-';
+        if (totalRestaurants) totalRestaurants.textContent = restaurantMetadata.totalRestaurants || '-';
+    }
+}
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     addMarkersToMap();
     setupFilters();
     setupViewToggle();
     renderList();
+    updateAdminInfo();
 });

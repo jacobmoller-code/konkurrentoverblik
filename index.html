@@ -68,6 +68,36 @@
         </div>
     </div>
 
+    <!-- Hidden admin section - scroll to bottom to see -->
+    <div class="admin-section" id="admin-section">
+        <div class="admin-toggle" onclick="document.getElementById('admin-panel').classList.toggle('show')">
+            ⚙️ Admin
+        </div>
+        <div class="admin-panel" id="admin-panel">
+            <h3>Data Administration</h3>
+            <p class="admin-info">
+                <strong>Sidst opdateret:</strong> <span id="last-updated">-</span><br>
+                <strong>Baseline dato:</strong> <span id="baseline-date">-</span><br>
+                <strong>Total restauranter:</strong> <span id="total-restaurants">-</span>
+            </p>
+            <div class="admin-legend">
+                <span class="status-badge active">● Aktiv</span>
+                <span class="status-badge new">● Ny</span>
+                <span class="status-badge closed">● Lukket</span>
+            </div>
+            <hr>
+            <p class="admin-instructions">
+                <strong>For at tjekke efter nye/lukkede restauranter:</strong><br>
+                1. Åbn terminal i projektmappen<br>
+                2. Kør: <code>node check-for-updates.js</code><br>
+                3. Gennemse rapporten i <code>update-report.json</code><br>
+                4. Kør: <code>node apply-updates.js</code> for at anvende ændringer<br>
+                <br>
+                <em>⚠️ Dette bruger Google API credits - brug sparsomt!</em>
+            </p>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="data.js"></script>
     <script src="app.js"></script>

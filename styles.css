@@ -337,6 +337,106 @@ header .subtitle {
 .brand-max { background-color: #E30613; }
 .brand-jagger { background-color: #2D5A27; }
 
+/* Status indicators */
+.status-new {
+    background-color: #d4edda !important;
+}
+
+.status-new::before {
+    content: '🆕 ';
+}
+
+.status-closed {
+    background-color: #f8d7da !important;
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+
+.status-closed::after {
+    content: ' (LUKKET)';
+    color: #dc3545;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    margin-right: 8px;
+}
+
+.status-badge.active { color: #28a745; }
+.status-badge.new { color: #17a2b8; }
+.status-badge.closed { color: #dc3545; }
+
+/* Admin section - hidden at bottom */
+.admin-section {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+.admin-toggle {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #999;
+    transition: all 0.2s;
+}
+
+.admin-toggle:hover {
+    background: #e0e0e0;
+    color: #666;
+}
+
+.admin-panel {
+    display: none;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.admin-panel.show {
+    display: block;
+}
+
+.admin-panel h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+}
+
+.admin-info {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.admin-legend {
+    margin: 15px 0;
+}
+
+.admin-instructions {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.admin-instructions code {
+    background: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .controls {
