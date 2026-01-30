@@ -86,8 +86,8 @@ const restaurants = {
       "zipCity": "7900 - Nykøbing Mors",
       "lat": 56.787724,
       "lng": 8.818352,
-      "rating": null,
-      "hours": null,
+      "rating": 3.6,
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
       "status": "active",
       "addedDate": "2026-01-30"
     },
@@ -438,8 +438,8 @@ const restaurants = {
       "zipCity": "9700 - Brønderslev",
       "lat": 57.26642,
       "lng": 9.939957,
-      "rating": null,
-      "hours": null,
+      "rating": 3.7,
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
       "status": "active",
       "addedDate": "2026-01-30"
     },
@@ -722,10 +722,10 @@ const restaurants = {
       "name": "McDonald's Kalundborg",
       "address": "Stejlhøj 7a",
       "zipCity": "4400 - Kalundborg",
-      "lat": 56.737064,
-      "lng": 9.623881,
-      "rating": null,
-      "hours": null,
+      "lat": 55.679714,
+      "lng": 11.091866,
+      "rating": 3.8,
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 2:00 AM | Saturday: 8:00 AM – 2:00 AM | Sunday: 8:00 AM – 1:00 AM",
       "status": "active",
       "addedDate": "2026-01-30"
     },
@@ -1054,8 +1054,8 @@ const restaurants = {
       "zipCity": "8410 - Rønde",
       "lat": 56.29804,
       "lng": 10.48476,
-      "rating": null,
-      "hours": null,
+      "rating": 3.9,
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
       "status": "active",
       "addedDate": "2026-01-30"
     },
@@ -1296,8 +1296,8 @@ const restaurants = {
       "zipCity": "5750 - Ringe",
       "lat": 55.230103,
       "lng": 10.486351,
-      "rating": null,
-      "hours": null,
+      "rating": 3.7,
+      "hours": "Monday: 8:00 AM – 1:00 AM | Tuesday: 8:00 AM – 1:00 AM | Wednesday: 8:00 AM – 1:00 AM | Thursday: 8:00 AM – 1:00 AM | Friday: 8:00 AM – 1:00 AM | Saturday: 8:00 AM – 1:00 AM | Sunday: 8:00 AM – 1:00 AM",
       "status": "active",
       "addedDate": "2026-01-30"
     },
@@ -1872,7 +1872,8 @@ const restaurants = {
       "address": "Østergårdsbakken 1A, 7800 Skive, Denmark",
       "lat": 56.56968490000001,
       "lng": 8.9982056,
-      "hours": null,
+      "rating": 3.8,
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
       "status": "active",
       "addedDate": "2026-01-30"
     },
@@ -1952,7 +1953,7 @@ const restaurants = {
       "lat": 55.6312,
       "lng": 12.5773,
       "rating": 4.2,
-      "hours": null,
+      "hours": "Monday: 10:00 AM – 10:00 PM | Tuesday: 10:00 AM – 10:00 PM | Wednesday: 10:00 AM – 10:00 PM | Thursday: 10:00 AM – 10:00 PM | Friday: 10:00 AM – 10:00 PM | Saturday: 10:00 AM – 10:00 PM | Sunday: 10:00 AM – 10:00 PM",
       "status": "active",
       "addedDate": "2026-01-30"
     }

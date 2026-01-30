@@ -73,6 +73,9 @@ const markers = {
     jagger: []
 };
 
+// Current sort state
+let currentSort = { field: 'name', direction: 'asc' };
+
 // Layer groups for each brand
 const layerGroups = {
     mcdonalds: L.layerGroup().addTo(map),
@@ -158,27 +161,97 @@ function setupViewToggle() {
     });
 }
 
+// Calculate weekly open hours percentage
+function calculateOpenPct(hours) {
+    if (!hours) return null;
+
+    const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    let totalHours = 0;
+
+    const parts = hours.split(' | ');
+    parts.forEach(part => {
+        weekdays.forEach(day => {
+            if (part.startsWith(day)) {
+                let time = part.replace(day + ': ', '');
+
+                if (time.includes('Open 24') || time.includes('24 hours')) {
+                    totalHours += 24;
+                } else if (time.includes('Closed')) {
+                    // 0 hours
+                } else {
+                    const match = time.match(/(\d+):?(\d*)\s*([AP]M)?\s*[–-]\s*(\d+):?(\d*)\s*([AP]M)?/i);
+                    if (match) {
+                        let openHour = parseInt(match[1]);
+                        let openMin = match[2] ? parseInt(match[2]) : 0;
+                        let closeHour = parseInt(match[4]);
+                        let closeMin = match[5] ? parseInt(match[5]) : 0;
+
+                        if (match[3] && match[3].toUpperCase() === 'PM' && openHour < 12) openHour += 12;
+                        if (match[6] && match[6].toUpperCase() === 'PM' && closeHour < 12) closeHour += 12;
+                        if (match[3] && match[3].toUpperCase() === 'AM' && openHour === 12) openHour = 0;
+                        if (match[6] && match[6].toUpperCase() === 'AM' && closeHour === 12) closeHour = 0;
+
+                        let dayHours = closeHour - openHour + (closeMin - openMin) / 60;
+                        if (dayHours < 0) dayHours += 24; // Crosses midnight
+                        totalHours += dayHours;
+                    }
+                }
+            }
+        });
+    });
+
+    // 168 hours in a week (24 * 7)
+    return Math.round((totalHours / 168) * 100);
+}
+
 // Render list view
 function renderList() {
     const container = document.getElementById('restaurant-list');
 
-    // Collect all visible restaurants
+    // Collect all visible restaurants with calculated openPct
     let allRestaurants = [];
 
     Object.keys(restaurants).forEach(brand => {
         const checkbox = document.getElementById(`filter-${brand}`);
         if (checkbox.checked) {
             restaurants[brand].forEach(r => {
-                allRestaurants.push({ ...r, brand });
+                const openPct = calculateOpenPct(r.hours);
+                allRestaurants.push({ ...r, brand, openPct });
             });
         }
     });
 
-    // Sort by brand, then by name
+    // Sort based on current sort state
     allRestaurants.sort((a, b) => {
-        const brandCompare = brandConfig[a.brand].name.localeCompare(brandConfig[b.brand].name);
-        if (brandCompare !== 0) return brandCompare;
-        return (a.name || '').localeCompare(b.name || '');
+        let comparison = 0;
+
+        if (currentSort.field === 'name') {
+            comparison = (a.name || '').localeCompare(b.name || '');
+        } else if (currentSort.field === 'address') {
+            comparison = (a.address || '').localeCompare(b.address || '');
+        } else if (currentSort.field === 'rating') {
+            const ratingA = a.rating ?? -1;
+            const ratingB = b.rating ?? -1;
+            comparison = ratingB - ratingA;
+        } else if (currentSort.field === 'openPct') {
+            const pctA = a.openPct ?? -1;
+            const pctB = b.openPct ?? -1;
+            comparison = pctB - pctA;
+        }
+
+        return currentSort.direction === 'asc' ? comparison : -comparison;
+    });
+
+    // Update sort arrows in header
+    document.querySelectorAll('.sortable').forEach(th => {
+        const arrow = th.querySelector('.sort-arrow');
+        if (th.dataset.sort === currentSort.field) {
+            arrow.textContent = currentSort.direction === 'asc' ? ' ↑' : ' ↓';
+            th.classList.add('sorted');
+        } else {
+            arrow.textContent = '';
+            th.classList.remove('sorted');
+        }
     });
 
     // Render table rows with weekday hours
@@ -197,7 +270,6 @@ function renderList() {
                 weekdays.forEach(day => {
                     if (part.startsWith(day)) {
                         let time = part.replace(day + ': ', '');
-                        // Simplify: "10:00 AM – 11:00 PM" -> "10-23"
                         const match = time.match(/(\d+):?\d*\s*([AP]M)?\s*[–-]\s*(\d+):?\d*\s*([AP]M)?/i);
                         if (match) {
                             let open = parseInt(match[1]);
@@ -226,6 +298,7 @@ function renderList() {
                 <td class="name-cell">${r.name || '-'}</td>
                 <td class="address-cell">${r.address || '-'}</td>
                 <td class="rating-cell">${r.rating ? '★' + r.rating : '-'}</td>
+                <td class="pct-cell">${r.openPct !== null ? r.openPct + '%' : '-'}</td>
                 <td class="hour-cell">${hoursMap['Monday'] || '-'}</td>
                 <td class="hour-cell">${hoursMap['Tuesday'] || '-'}</td>
                 <td class="hour-cell">${hoursMap['Wednesday'] || '-'}</td>
@@ -330,11 +403,32 @@ function setupAdminToggle() {
     }
 }
 
+// Setup sorting on table headers
+function setupSorting() {
+    document.querySelectorAll('.sortable').forEach(th => {
+        th.addEventListener('click', () => {
+            const field = th.dataset.sort;
+
+            // Toggle direction if same field, otherwise default to asc (or desc for rating)
+            if (currentSort.field === field) {
+                currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.field = field;
+                // Rating defaults to descending (highest first), others to ascending
+                currentSort.direction = field === 'rating' ? 'desc' : 'asc';
+            }
+
+            renderList();
+        });
+    });
+}
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     addMarkersToMap();
     setupFilters();
     setupViewToggle();
+    setupSorting();
     renderList();
     updateAdminInfo();
     setupAdminToggle();
