@@ -383,10 +383,12 @@ header .subtitle {
     display: inline-block;
     padding: 8px 16px;
     background: #f0f0f0;
+    border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 12px;
     color: #999;
+    font-family: inherit;
     transition: all 0.2s;
 }
 
