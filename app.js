@@ -409,13 +409,13 @@ function setupSorting() {
         th.addEventListener('click', () => {
             const field = th.dataset.sort;
 
-            // Toggle direction if same field, otherwise default to asc (or desc for rating)
+            // Toggle direction if same field, otherwise default to asc (or desc for rating/openPct)
             if (currentSort.field === field) {
                 currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
             } else {
                 currentSort.field = field;
-                // Rating defaults to descending (highest first), others to ascending
-                currentSort.direction = field === 'rating' ? 'desc' : 'asc';
+                // Rating and openPct default to descending (highest first), others to ascending
+                currentSort.direction = (field === 'rating' || field === 'openPct') ? 'desc' : 'asc';
             }
 
             renderList();
