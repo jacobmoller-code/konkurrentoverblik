@@ -56,18 +56,25 @@
                 <div id="map"></div>
             </div>
             <div id="list-view" class="view">
-                <table class="restaurant-table">
-                    <thead>
-                        <tr>
-                            <th style="width:30px"></th>
-                            <th style="width:180px">Navn</th>
-                            <th>Adresse</th>
-                            <th style="width:50px">Rating</th>
-                            <th style="width:80px">Åbningstid</th>
-                        </tr>
-                    </thead>
-                    <tbody id="restaurant-list"></tbody>
-                </table>
+                <div class="table-wrapper">
+                    <table class="restaurant-table">
+                        <thead>
+                            <tr>
+                                <th class="col-name">Navn</th>
+                                <th class="col-address">Adresse</th>
+                                <th class="col-rating">Rating</th>
+                                <th class="col-hour">Man</th>
+                                <th class="col-hour">Tir</th>
+                                <th class="col-hour">Ons</th>
+                                <th class="col-hour">Tor</th>
+                                <th class="col-hour">Fre</th>
+                                <th class="col-hour">Lør</th>
+                                <th class="col-hour">Søn</th>
+                            </tr>
+                        </thead>
+                        <tbody id="restaurant-list"></tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

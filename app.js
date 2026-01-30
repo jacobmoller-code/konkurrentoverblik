@@ -181,41 +181,58 @@ function renderList() {
         return (a.name || '').localeCompare(b.name || '');
     });
 
-    // Render table rows
+    // Render table rows with weekday hours
     container.innerHTML = allRestaurants.map(r => {
         const config = brandConfig[r.brand];
-        // Search by name and address to find the actual restaurant listing
         const searchQuery = encodeURIComponent(`${r.name} ${r.address || ''}`);
         const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${searchQuery}`;
 
-        // Format hours - just show simple range like "10-22"
-        let hoursDisplay = '-';
+        // Parse hours into weekday columns
+        const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+        const hoursMap = {};
+
         if (r.hours) {
-            // Try to extract a simple time range from Monday
-            const match = r.hours.match(/Monday: (\d+):?\d* [AP]M – (\d+):?\d* [AP]M/i);
-            if (match) {
-                let open = parseInt(match[1]);
-                let close = parseInt(match[2]);
-                // Convert PM
-                if (r.hours.includes('AM') && r.hours.includes('PM')) {
-                    if (close < 12) close += 12;
-                }
-                hoursDisplay = `${open}-${close}`;
-            } else if (r.hours.includes('Open 24')) {
-                hoursDisplay = '24t';
-            }
+            const parts = r.hours.split(' | ');
+            parts.forEach(part => {
+                weekdays.forEach(day => {
+                    if (part.startsWith(day)) {
+                        let time = part.replace(day + ': ', '');
+                        // Simplify: "10:00 AM – 11:00 PM" -> "10-23"
+                        const match = time.match(/(\d+):?\d*\s*([AP]M)?\s*[–-]\s*(\d+):?\d*\s*([AP]M)?/i);
+                        if (match) {
+                            let open = parseInt(match[1]);
+                            let close = parseInt(match[3]);
+                            if (match[2] && match[2].toUpperCase() === 'PM' && open < 12) open += 12;
+                            if (match[4] && match[4].toUpperCase() === 'PM' && close < 12) close += 12;
+                            if (match[2] && match[2].toUpperCase() === 'AM' && open === 12) open = 0;
+                            if (match[4] && match[4].toUpperCase() === 'AM' && close === 12) close = 0;
+                            hoursMap[day] = `${open}-${close}`;
+                        } else if (time.includes('Open 24') || time.includes('24 hours')) {
+                            hoursMap[day] = '24t';
+                        } else if (time.includes('Closed')) {
+                            hoursMap[day] = 'Lukket';
+                        } else {
+                            hoursMap[day] = time.substring(0, 10);
+                        }
+                    }
+                });
+            });
         }
 
-        // Status class for styling
         const statusClass = r.status === 'new' ? 'status-new' : (r.status === 'closed' ? 'status-closed' : '');
 
         return `
             <tr class="restaurant-row ${statusClass}" data-url="${googleMapsUrl}">
-                <td><img class="brand-logo" src="${config.logo}" alt="${config.name}" onerror="this.style.display='none'"></td>
                 <td class="name-cell">${r.name || '-'}</td>
                 <td class="address-cell">${r.address || '-'}</td>
                 <td class="rating-cell">${r.rating ? '★' + r.rating : '-'}</td>
-                <td class="hours-cell" title="${r.hours || ''}">${hoursDisplay}</td>
+                <td class="hour-cell">${hoursMap['Monday'] || '-'}</td>
+                <td class="hour-cell">${hoursMap['Tuesday'] || '-'}</td>
+                <td class="hour-cell">${hoursMap['Wednesday'] || '-'}</td>
+                <td class="hour-cell">${hoursMap['Thursday'] || '-'}</td>
+                <td class="hour-cell">${hoursMap['Friday'] || '-'}</td>
+                <td class="hour-cell">${hoursMap['Saturday'] || '-'}</td>
+                <td class="hour-cell">${hoursMap['Sunday'] || '-'}</td>
             </tr>
         `;
     }).join('');
