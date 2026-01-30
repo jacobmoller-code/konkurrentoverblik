@@ -94,7 +94,9 @@ function addMarkersToMap() {
                     icon: createMarkerIcon(brand)
                 });
 
-                const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${restaurant.lat},${restaurant.lng}`;
+                // Search by name and address to find the actual restaurant listing
+                const searchQuery = encodeURIComponent(`${restaurant.name} ${restaurant.address || ''}`);
+                const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${searchQuery}`;
                 const popupContent = `
                     <div class="popup-content">
                         <span class="brand-tag brand-${brand}">${config.name}</span>
@@ -182,15 +184,27 @@ function renderList() {
     // Render compact list with logos, opening hours, and status
     container.innerHTML = allRestaurants.map(r => {
         const config = brandConfig[r.brand];
-        const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${r.lat},${r.lng}`;
-        // Format hours - just show today or first day
+        // Search by name and address to find the actual restaurant listing
+        const searchQuery = encodeURIComponent(`${r.name} ${r.address || ''}`);
+        const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${searchQuery}`;
+
+        // Format hours - show abbreviated weekday hours
         let hoursDisplay = '';
         if (r.hours) {
-            const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
             const hoursArray = r.hours.split(' | ');
-            const todayHours = hoursArray.find(h => h.startsWith(today));
-            hoursDisplay = todayHours ? todayHours.replace(today + ': ', '') : hoursArray[0]?.split(': ')[1] || '';
+            // Convert to short format: Man-Fre: 10-22, Lør-Søn: 10-23
+            const shortHours = hoursArray.map(h => {
+                const parts = h.split(': ');
+                if (parts.length === 2) {
+                    const day = parts[0].substring(0, 3); // Mon -> Mon
+                    const time = parts[1].replace(/ AM/g, '').replace(/ PM/g, '').replace(/12:00/g, '12').replace(/:00/g, '');
+                    return `${day}: ${time}`;
+                }
+                return h;
+            });
+            hoursDisplay = shortHours.join(' · ');
         }
+
         // Status class for styling
         const statusClass = r.status === 'new' ? 'status-new' : (r.status === 'closed' ? 'status-closed' : '');
         const statusBadge = r.status === 'new' ? '<span class="status-badge new">NY</span>' :
@@ -201,7 +215,7 @@ function renderList() {
                 <span class="restaurant-name">${statusBadge}${r.name || 'Unavngivet'}</span>
                 <span class="restaurant-address">${r.address || ''}</span>
                 ${r.rating ? `<span class="rating">★ ${r.rating}</span>` : '<span class="rating"></span>'}
-                <span class="restaurant-hours">${hoursDisplay}</span>
+                <span class="restaurant-hours" title="${r.hours || ''}">${hoursDisplay}</span>
             </div>
         `;
     }).join('');

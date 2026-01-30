@@ -160,8 +160,8 @@ header .subtitle {
 /* Compact list header */
 .list-header {
     display: grid;
-    grid-template-columns: 30px 180px 1fr 60px 150px;
-    gap: 10px;
+    grid-template-columns: 30px 200px 250px 50px 1fr;
+    gap: 8px;
     padding: 8px 15px;
     background: #f5f5f5;
     font-weight: 600;
@@ -170,18 +170,19 @@ header .subtitle {
     border-bottom: 2px solid #ddd;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 /* Compact single-row restaurant item */
 .restaurant-item.compact {
     display: grid;
-    grid-template-columns: 30px 180px 1fr 60px 150px;
-    gap: 10px;
+    grid-template-columns: 30px 200px 250px 50px 1fr;
+    gap: 8px;
     padding: 6px 15px;
     border-bottom: 1px solid #eee;
     align-items: center;
     transition: background-color 0.2s;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .restaurant-item.compact:hover {
@@ -223,10 +224,10 @@ header .subtitle {
 
 .restaurant-item.compact .restaurant-hours {
     color: #666;
-    font-size: 11px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 10px;
+    line-height: 1.4;
+    white-space: normal;
+    word-break: break-word;
 }
 
 /* Legacy styles for non-compact view */
