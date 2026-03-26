@@ -127,14 +127,7 @@ function addMarkersToMap() {
 
 // Add pylon markers to map
 function addPylonMarkers() {
-    const pylonIconHtml = `
-        <div class="pylon-marker-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 44" width="26" height="44">
-                <rect x="0" y="0" width="26" height="30" rx="2" fill="#27251F" stroke="white" stroke-width="1.5"/>
-                <text x="13" y="24" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="#FFC72C" text-anchor="middle">M</text>
-                <rect x="11" y="30" width="4" height="14" fill="#888"/>
-            </svg>
-        </div>`;
+    const pylonIconHtml = `<div class="pylon-marker-icon"></div>`;
 
     pylonAreas.forEach(area => {
         if (!area.lat || !area.lng) return;
@@ -142,9 +135,9 @@ function addPylonMarkers() {
         const icon = L.divIcon({
             className: '',
             html: pylonIconHtml,
-            iconSize: [26, 44],
-            iconAnchor: [13, 44],
-            popupAnchor: [0, -46]
+            iconSize: [22, 22],
+            iconAnchor: [11, 11],
+            popupAnchor: [0, -13]
         });
 
         const uncertainWarning = area.uncertain
