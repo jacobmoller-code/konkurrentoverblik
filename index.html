@@ -45,6 +45,17 @@
                     </label>
                 </div>
             </div>
+            <div class="filter-divider"></div>
+            <div class="filter-group">
+                <label>Pylonmuligheder:</label>
+                <div class="checkboxes">
+                    <label class="checkbox-label pylons">
+                        <input type="checkbox" id="filter-pylons">
+                        <span class="brand-icon pylon-icon"></span>
+                        Potentielle pyloner (<span id="count-pylons">0</span>)
+                    </label>
+                </div>
+            </div>
             <div class="view-toggle">
                 <button id="btn-map" class="active">Kort</button>
                 <button id="btn-list">Liste</button>
@@ -112,6 +123,7 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="data.js"></script>
+    <script src="pylon-data.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

@@ -85,6 +85,9 @@ const layerGroups = {
     jagger: L.layerGroup().addTo(map)
 };
 
+// Pylon layer (off by default)
+const pylonLayerGroup = L.layerGroup();
+
 // Add markers to map
 function addMarkersToMap() {
     Object.keys(restaurants).forEach(brand => {
@@ -122,6 +125,35 @@ function addMarkersToMap() {
     });
 }
 
+// Add pylon markers to map
+function addPylonMarkers() {
+    const icon = L.divIcon({
+        className: '',
+        html: '<div class="pylon-marker-icon"></div>',
+        iconSize: [22, 22],
+        iconAnchor: [11, 11],
+        popupAnchor: [0, -13]
+    });
+
+    let count = 0;
+    pylonAreas.forEach(area => {
+        if (!area.lat || !area.lng) return;
+        count++;
+        const marker = L.marker([area.lat, area.lng], { icon });
+        marker.bindPopup(`
+            <div class="popup-content">
+                <span class="brand-tag" style="background:#DA291C;color:#fff;">Pylonmulighed</span>
+                <h3>${area.navn}</h3>
+                <p>${area.kommune || ''}</p>
+                <p style="font-size:12px;color:#999;">Nr. ${area.nr} af 160</p>
+            </div>
+        `);
+        marker.addTo(pylonLayerGroup);
+    });
+
+    document.getElementById('count-pylons').textContent = pylonAreas.length;
+}
+
 // Filter functionality
 function setupFilters() {
     Object.keys(brandConfig).forEach(brand => {
@@ -134,6 +166,14 @@ function setupFilters() {
             }
             renderList();
         });
+    });
+
+    document.getElementById('filter-pylons').addEventListener('change', (e) => {
+        if (e.target.checked) {
+            map.addLayer(pylonLayerGroup);
+        } else {
+            map.removeLayer(pylonLayerGroup);
+        }
     });
 }
 
@@ -426,6 +466,7 @@ function setupSorting() {
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     addMarkersToMap();
+    addPylonMarkers();
     setupFilters();
     setupViewToggle();
     setupSorting();

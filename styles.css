@@ -76,6 +76,27 @@ header .subtitle {
     display: inline-block;
 }
 
+.brand-icon.pylon-icon {
+    border-radius: 2px;
+    background-color: #DA291C;
+}
+
+.filter-divider {
+    width: 1px;
+    height: 30px;
+    background: #ddd;
+    margin: 0 5px;
+}
+
+.pylon-marker-icon {
+    width: 22px;
+    height: 22px;
+    background: #DA291C;
+    border: 2px solid white;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
 .view-toggle {
     display: flex;
     gap: 5px;
