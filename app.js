@@ -127,27 +127,48 @@ function addMarkersToMap() {
 
 // Add pylon markers to map
 function addPylonMarkers() {
-    const icon = L.divIcon({
-        className: '',
-        html: '<div class="pylon-marker-icon"></div>',
-        iconSize: [22, 22],
-        iconAnchor: [11, 11],
-        popupAnchor: [0, -13]
-    });
+    const pylonIconHtml = `
+        <div class="pylon-marker-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 44" width="26" height="44">
+                <rect x="0" y="0" width="26" height="30" rx="2" fill="#27251F" stroke="white" stroke-width="1.5"/>
+                <text x="13" y="24" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="#FFC72C" text-anchor="middle">M</text>
+                <rect x="11" y="30" width="4" height="14" fill="#888"/>
+            </svg>
+        </div>`;
 
-    let count = 0;
     pylonAreas.forEach(area => {
         if (!area.lat || !area.lng) return;
-        count++;
-        const marker = L.marker([area.lat, area.lng], { icon });
-        marker.bindPopup(`
+
+        const icon = L.divIcon({
+            className: '',
+            html: pylonIconHtml,
+            iconSize: [26, 44],
+            iconAnchor: [13, 44],
+            popupAnchor: [0, -46]
+        });
+
+        const uncertainWarning = area.uncertain
+            ? `<p style="margin-top:6px;padding:4px 6px;background:#fff3cd;border-left:3px solid #ffc107;font-size:11px;color:#856404;">
+                ⚠️ <strong>Usikker placering</strong> – koordinater er estimerede, ikke fundet i plandata.
+               </p>`
+            : '';
+
+        const planDataNote = area.foundName && area.foundName !== area.navn
+            ? `<p style="font-size:11px;color:#888;margin-top:2px;">Plandata: ${area.foundName}</p>`
+            : '';
+
+        const popup = `
             <div class="popup-content">
                 <span class="brand-tag" style="background:#DA291C;color:#fff;">Pylonmulighed</span>
                 <h3>${area.navn}</h3>
                 <p>${area.kommune || ''}</p>
-                <p style="font-size:12px;color:#999;">Nr. ${area.nr} af 160</p>
-            </div>
-        `);
+                ${planDataNote}
+                <p style="font-size:11px;color:#999;margin-top:4px;">Nr. ${area.nr} af 160 &nbsp;·&nbsp; ID: ${area.id || '–'}</p>
+                ${uncertainWarning}
+            </div>`;
+
+        const marker = L.marker([area.lat, area.lng], { icon });
+        marker.bindPopup(popup);
         marker.addTo(pylonLayerGroup);
     });
 
