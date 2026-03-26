@@ -107,25 +107,25 @@ var pylonAreas = [
     "nr": 14,
     "kommune": "Esbjerg",
     "navn": "Erhverv ved Esbjergmotorvejen syd",
-    "lat": null,
-    "lng": null,
-    "foundName": null
+    "lat": 55.475,
+    "lng": 8.51,
+    "foundName": "Estimeret: Erhverv syd for Esbjergmotorvejen"
   },
   {
     "nr": 15,
     "kommune": "Esbjerg",
     "navn": "Erhvervsområde ved Esbjergmotorvejen",
-    "lat": null,
-    "lng": null,
-    "foundName": null
+    "lat": 55.51321,
+    "lng": 8.49477,
+    "foundName": "Erhverv nord for Kjersing Ringvej"
   },
   {
     "nr": 16,
     "kommune": "Esbjerg",
     "navn": "Erhverv langs Esbjergmotorvejen",
-    "lat": null,
-    "lng": null,
-    "foundName": null
+    "lat": 55.503,
+    "lng": 8.503,
+    "foundName": "Estimeret: Erhverv langs Esbjergmotorvejen"
   },
   {
     "nr": 17,
@@ -243,9 +243,9 @@ var pylonAreas = [
     "nr": 31,
     "kommune": "Faaborg-Midtfyn",
     "navn": "Erhvervsområde nord for Ring Nord - Ringe",
-    "lat": null,
-    "lng": null,
-    "foundName": null
+    "lat": 55.26,
+    "lng": 10.484,
+    "foundName": "Estimeret: Nord for Ring Nord, Ringe"
   },
   {
     "nr": 32,
@@ -547,8 +547,9 @@ var pylonAreas = [
     "nr": 69,
     "kommune": "Frederikshavn",
     "navn": "Fladholtvej",
-    "lat": null,
-    "lng": null
+    "lat": 57.388,
+    "lng": 10.508,
+    "foundName": "Vangen, Haldbjerg, Frederikshavn"
   },
   {
     "nr": 70,
@@ -602,8 +603,9 @@ var pylonAreas = [
     "nr": 76,
     "kommune": null,
     "navn": "Byområde på Dyrehavegårds Jorder",
-    "lat": null,
-    "lng": null
+    "lat": 55.78446,
+    "lng": 12.53257,
+    "foundName": "Byområde på Dyrehavegårds Jorder"
   },
   {
     "nr": 77,
@@ -793,8 +795,9 @@ var pylonAreas = [
     "nr": 100,
     "kommune": "Silkeborg",
     "navn": "Erhvervsområde ved motorvejsudfletning, Funder",
-    "lat": null,
-    "lng": null
+    "lat": 56.14926,
+    "lng": 9.45349,
+    "foundName": "Erhvervsområde ved motorvejsudfletning, Funder"
   },
   {
     "nr": 101,
@@ -1144,8 +1147,9 @@ var pylonAreas = [
     "nr": 144,
     "kommune": "Aalborg",
     "navn": "Fælfodvej",
-    "lat": null,
-    "lng": null
+    "lat": 57.10202,
+    "lng": 10.02616,
+    "foundName": "Følfodvej m.m."
   },
   {
     "nr": 145,
