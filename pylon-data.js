@@ -19,22 +19,25 @@ var pylonAreas = [
     "nr": 3,
     "kommune": "Assens",
     "navn": "Område ved Tingvejen og Motorvejen",
-    "lat": null,
-    "lng": null
+    "lat": 55.41296,
+    "lng": 10.03738,
+    "foundName": "Erhvervsområde ved Hækkebøllevej"
   },
   {
     "nr": 4,
     "kommune": "Assens",
     "navn": "Område mellem Esbjergmotorvejen og Vester Lufthavnsvej",
-    "lat": null,
-    "lng": null
+    "lat": 55.41341,
+    "lng": 10.05184,
+    "foundName": "Erhvervsområde - Industrivej i Grønnemose"
   },
   {
     "nr": 5,
     "kommune": "Brønderslev",
     "navn": "Område ved John Tranumsvej",
-    "lat": null,
-    "lng": null
+    "lat": 57.2533,
+    "lng": 9.97047,
+    "foundName": "Erhvervsområde, Øster Brønderslevvej Nord II"
   },
   {
     "nr": 6,
@@ -88,9 +91,9 @@ var pylonAreas = [
     "nr": 12,
     "kommune": "Esbjerg",
     "navn": "Nordre Tovrup",
-    "lat": null,
-    "lng": null,
-    "foundName": null
+    "lat": 55.49274,
+    "lng": 8.50343,
+    "foundName": "Natur langs Motorvejen ved Højdevej"
   },
   {
     "nr": 13,
@@ -128,9 +131,9 @@ var pylonAreas = [
     "nr": 17,
     "kommune": "Esbjerg",
     "navn": "Erhvervsomr Esbjergmotorvejen",
-    "lat": 55.35741,
-    "lng": 8.7732,
-    "foundName": "Erhvervsområde Nord Mellem Vardevej og Industrivej"
+    "lat": 55.50118,
+    "lng": 8.51263,
+    "foundName": "Område ved Andrupvej og Esbjergmotorvejen"
   },
   {
     "nr": 18,
@@ -384,15 +387,17 @@ var pylonAreas = [
     "nr": 49,
     "kommune": "Herning",
     "navn": "NE12",
-    "lat": null,
-    "lng": null
+    "lat": 56.13603,
+    "lng": 9.01028,
+    "foundName": "NÃE12"
   },
   {
     "nr": 50,
     "kommune": "Hjørring",
     "navn": "Erhvervsområde ved Sprøgvej og Farøvej",
-    "lat": null,
-    "lng": null
+    "lat": 57.44925,
+    "lng": 10.03428,
+    "foundName": "Erhvervsområde ved Sprogøvej og Farøvej m.m., Hjørring"
   },
   {
     "nr": 51,
@@ -1170,91 +1175,104 @@ var pylonAreas = [
     "nr": 148,
     "kommune": "Aarhus",
     "navn": "Tillæg nr. 105 Kommuneplan 2017",
-    "lat": null,
-    "lng": null
+    "lat": 56.15596,
+    "lng": 9.99092,
+    "foundName": "Tillæg nr. 105 til Kommuneplan 2017"
   },
   {
     "nr": 149,
     "kommune": "Aarhus",
     "navn": "Tillæg nr. 105 Kommuneplan 2017",
-    "lat": null,
-    "lng": null
+    "lat": 56.28555,
+    "lng": 10.32835,
+    "foundName": "Tillæg nr. 105 til Kommuneplan 2017"
   },
   {
     "nr": 150,
     "kommune": "Aarhus",
     "navn": "Tillæg nr. 105 Kommuneplan 2017",
-    "lat": null,
-    "lng": null
+    "lat": 56.15568,
+    "lng": 10.0558,
+    "foundName": "Tillæg nr. 105 til Kommuneplan 2017"
   },
   {
     "nr": 151,
     "kommune": "Aarhus",
     "navn": "Tillæg nr. 105 Kommuneplan 2017",
-    "lat": null,
-    "lng": null
+    "lat": 56.15471,
+    "lng": 10.00185,
+    "foundName": "Tillæg nr. 105 til Kommuneplan 2017"
   },
   {
     "nr": 152,
     "kommune": "Aarhus",
     "navn": "Tillæg nr. 105 Kommuneplan 2017",
-    "lat": null,
-    "lng": null
+    "lat": 56.21977,
+    "lng": 10.13409,
+    "foundName": "Tillæg nr. 105 til Kommuneplan 2017"
   },
   {
     "nr": 153,
     "kommune": "Aarhus",
     "navn": "Tillæg nr. 105 Kommuneplan 2017",
-    "lat": null,
-    "lng": null
+    "lat": 56.15252,
+    "lng": 10.01142,
+    "foundName": "Tillæg nr. 105 til Kommuneplan 2017"
   },
   {
     "nr": 154,
     "kommune": "Aarhus",
     "navn": "Tillæg nr. 105 Kommuneplan 2017",
-    "lat": null,
-    "lng": null
+    "lat": 56.2212,
+    "lng": 10.13323,
+    "foundName": "Tillæg nr. 105 til Kommuneplan 2017"
   },
   {
     "nr": 155,
     "kommune": "Aarhus",
     "navn": "Tillæg nr. 105 Kommuneplan 2017",
-    "lat": null,
-    "lng": null
+    "lat": 56.167,
+    "lng": 10.05791,
+    "foundName": "Tillæg nr. 105 til Kommuneplan 2017"
   },
   {
     "nr": 156,
     "kommune": "Aarhus",
     "navn": "Tillæg nr. 105 Kommuneplan 2017",
-    "lat": null,
-    "lng": null
+    "lat": 56.21762,
+    "lng": 10.1417,
+    "foundName": "Tillæg nr. 105 til Kommuneplan 2017"
   },
   {
     "nr": 157,
     "kommune": "Aarhus",
     "navn": "Tillæg nr. 105 Kommuneplan 2017",
-    "lat": null,
-    "lng": null
+    "lat": 56.16025,
+    "lng": 10.06094,
+    "foundName": "Tillæg nr. 105 til Kommuneplan 2017"
   },
   {
     "nr": 158,
     "kommune": "Aarhus",
     "navn": "Tillæg nr. 105 Kommuneplan 2017",
-    "lat": null,
-    "lng": null
+    "lat": 56.15149,
+    "lng": 9.98908,
+    "foundName": "Tillæg nr. 105 til Kommuneplan 2017"
   },
   {
     "nr": 159,
     "kommune": "Aarhus",
     "navn": "Tillæg nr. 105 Kommuneplan 2017",
-    "lat": null,
-    "lng": null
+    "lat": 56.22383,
+    "lng": 10.1291,
+    "foundName": "Tillæg nr. 105 til Kommuneplan 2017"
   },
   {
     "nr": 160,
     "kommune": "Aarhus",
     "navn": "Tillæg nr. 105 Kommuneplan 2017",
-    "lat": null,
-    "lng": null
+    "lat": 56.12605,
+    "lng": 10.11246,
+    "foundName": "Tillæg nr. 105 til Kommuneplan 2017"
   }
 ];
