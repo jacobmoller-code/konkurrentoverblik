@@ -1,4 +1,4 @@
-const pylonAreas = [
+var pylonAreas = [
   {
     "nr": 1,
     "kommune": "Allerød",
