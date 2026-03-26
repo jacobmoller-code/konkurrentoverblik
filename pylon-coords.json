@@ -1,4 +1,4 @@
-var pylonAreas = [
+[
   {
     "nr": 1,
     "kommune": "Allerød",
@@ -1257,4 +1257,4 @@ var pylonAreas = [
     "lat": null,
     "lng": null
   }
-];
+]
